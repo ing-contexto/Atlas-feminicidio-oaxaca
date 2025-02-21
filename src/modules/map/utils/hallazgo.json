@@ -1,0 +1,331 @@
+[
+  {
+    "Carpeta": "20620/FMUJ/UFEM/2020",
+    "Región": "Valles Centrales",
+    "Zona": "Lugar de trabajo",
+    "Y": 17.0942179995025,
+    "X": -96.75989881
+  },
+  {
+    "Carpeta": "23835/FMUJ/UFEM/2019",
+    "Región": "Valles Centrales",
+    "Zona": "Vivienda",
+    "Y": 17.1250181797816,
+    "X": -96.77659678
+  },
+  {
+    "Carpeta": "10/FEADM-F/2017",
+    "Región": "Valles Centrales",
+    "Zona": "Vía pública",
+    "Y": 17.0446145527038,
+    "X": -96.7278547
+  },
+  {
+    "Carpeta": "17/FEADM/2018",
+    "Región": "Valles Centrales",
+    "Zona": "Vivienda",
+    "Y": 17.0891754333732,
+    "X": -96.74593838
+  },
+  {
+    "Carpeta": "12496/FMUJ/UFEM/2020",
+    "Región": "Valles Centrales",
+    "Zona": "Terreno",
+    "Y": 16.985539211915,
+    "X": -96.72225708
+  },
+  {
+    "Carpeta": "37534/FMUJ/UFEM/2021",
+    "Región": "Valles Centrales",
+    "Zona": "Vivienda",
+    "Y": 17.0865864247437,
+    "X": -96.76306958
+  },
+  {
+    "Carpeta": "05/FEADAM-F/2017",
+    "Región": "Valles Centrales",
+    "Zona": "Vivienda",
+    "Y": 17.0684978468823,
+    "X": -96.75651898
+  },
+  {
+    "Carpeta": "1874/H.L./2017",
+    "Región": "Mixteca",
+    "Zona": "Lugar de trabajo",
+    "Y": 17.804905154359602,
+    "X": -97.80288425
+  },
+  {
+    "Carpeta": "409/S.J./2016",
+    "Región": "Mixteca",
+    "Zona": "Vía pública",
+    "Y": 17.40394401406529,
+    "X": -98.05449775
+  },
+  {
+    "Carpeta": "1737/FMM/2017",
+    "Región": "Mixteca",
+    "Zona": "Vía pública",
+    "Y": 17.307670850537626,
+    "X": -97.80688711
+  },
+  {
+    "Carpeta": "2780/FMM/2018",
+    "Región": "Mixteca",
+    "Zona": "Vivienda",
+    "Y": 17.269880355757184,
+    "X": -97.70202877
+  },
+  {
+    "Carpeta": "3761/H.L./2015",
+    "Región": "Mixteca",
+    "Zona": "Vía pública",
+    "Y": 17.811359136450836,
+    "X": -97.7723944
+  },
+  {
+    "Carpeta": "1069/H.L./2014",
+    "Región": "Mixteca",
+    "Zona": "Vivienda",
+    "Y": 17.503500422068708,
+    "X": -98.14281273
+  },
+  {
+    "Carpeta": "353/P.G/2011 Y 376/PG/2011",
+    "Región": "Mixteca",
+    "Zona": "Terreno",
+    "Y": 16.917266682804666,
+    "X": -97.93468363
+  },
+  {
+    "Carpeta": "210/S.J./2013",
+    "Región": "Mixteca",
+    "Zona": "Vivienda",
+    "Y": 17.150127855865975,
+    "X": -97.91128925
+  },
+  {
+    "Carpeta": "417/HL/2018",
+    "Región": "Mixteca",
+    "Zona": "Vivienda",
+    "Y": 17.81298287090186,
+    "X": -97.7811011
+  },
+  {
+    "Carpeta": "25299/FMIX/SILACAYOAPAM/2021",
+    "Región": "Mixteca",
+    "Zona": "Vivienda",
+    "Y": 17.66866499919047,
+    "X": -98.32847192
+  },
+  {
+    "Carpeta": "2559/P.G/2016",
+    "Región": "Mixteca",
+    "Zona": "Vía pública",
+    "Y": 17.021018300932447,
+    "X": -97.93743192
+  },
+  {
+    "Carpeta": "1791/PG/2017",
+    "Región": "Mixteca",
+    "Zona": "Vía pública",
+    "Y": 17.57480264361428,
+    "X": -97.42152902
+  },
+  {
+    "Carpeta": "61/FTFM/2016",
+    "Región": "Cañada",
+    "Zona": "Terreno",
+    "Y": 18.06626109401719,
+    "X": -96.96372644
+  },
+  {
+    "Carpeta": "3676/FSPP/2016",
+    "Región": "Costa",
+    "Zona": "Vía pública",
+    "Y": 15.757252861339751,
+    "X": -96.45713057
+  },
+  {
+    "Carpeta": "1920/FRG/2017",
+    "Región": "Costa",
+    "Zona": "Vía pública",
+    "Y": 16.07107720858794,
+    "X": -97.62199934
+  },
+  {
+    "Carpeta": "1446/FSPP/2017",
+    "Región": "Costa",
+    "Zona": "Vivienda",
+    "Y": 15.926205965964387,
+    "X": -96.49832325
+  },
+  {
+    "Carpeta": "42092/FCOS/HUATULCO/2023",
+    "Región": "Costa",
+    "Zona": "Vivienda",
+    "Y": 15.767713705613208,
+    "X": -96.2579751
+  },
+  {
+    "Carpeta": "33434/FCOS/PUERTO/2021",
+    "Región": "Costa",
+    "Zona": "Vía pública",
+    "Y": 15.884442759219178,
+    "X": -97.08227016
+  },
+  {
+    "Carpeta": "31335/FCOS/PUERTO/2021",
+    "Región": "Costa",
+    "Zona": "Vía pública",
+    "Y": 15.867225801733321,
+    "X": -97.06465466
+  },
+  {
+    "Carpeta": "2597/FCOS/POCHUTLA/2023",
+    "Región": "Costa",
+    "Zona": "Vía pública",
+    "Y": 16.03744209418988,
+    "X": -96.50378888
+  },
+  {
+    "Carpeta": "3639/FPE/2017",
+    "Región": "Costa",
+    "Zona": "Espacio público",
+    "Y": 15.880200759291244,
+    "X": -97.08910859
+  },
+  {
+    "Carpeta": "4575/FCOS/POCHUTLA/2021",
+    "Región": "Costa",
+    "Zona": "Vía pública",
+    "Y": 15.733265656630548,
+    "X": -96.46957687
+  },
+  {
+    "Carpeta": "31348/FCOS/PINOTEPA/2022",
+    "Región": "Costa",
+    "Zona": "Lugar de trabajo",
+    "Y": 16.346116351296704,
+    "X": -98.04831235
+  },
+  {
+    "Carpeta": "20446/FCOS/PINOTEPA/2022",
+    "Región": "Costa",
+    "Zona": "Vía pública",
+    "Y": 16.190781978167564,
+    "X": -97.97162687
+  },
+  {
+    "Carpeta": "26907/FCOS/PINOTEPA/2022",
+    "Región": "Costa",
+    "Zona": "Terreno",
+    "Y": 16.33146545370603,
+    "X": -98.11258321
+  },
+  {
+    "Carpeta": "3928/FRG/2018",
+    "Región": "Costa",
+    "Zona": "Vía pública",
+    "Y": 16.006527439004564,
+    "X": -97.42682756
+  },
+  {
+    "Carpeta": "3249/FIST/FMUJ-TEHUANTEPEC/2020",
+    "Región": "Istmo",
+    "Zona": "Terreno",
+    "Y": 17.480977185936464,
+    "X": -95.37158089
+  },
+  {
+    "Carpeta": "1511/FIST/FMUJ-TEHUANTEPEC/2022",
+    "Región": "Istmo",
+    "Zona": "Espacio público",
+    "Y": 16.45267,
+    "X": -95.0058
+  },
+  {
+    "Carpeta": "5045/FMIT/2014",
+    "Región": "Istmo",
+    "Zona": "Espacio público",
+    "Y": 16.342819267978452,
+    "X": -95.22289839
+  },
+  {
+    "Carpeta": "17573/FIST/FMUJ-TEHUANTEPEC/2021",
+    "Región": "Istmo",
+    "Zona": "Terreno",
+    "Y": 16.370588783190403,
+    "X": -94.66797023
+  },
+  {
+    "Carpeta": "3714(MR)2016",
+    "Región": "Istmo",
+    "Zona": "Vía pública",
+    "Y": 16.870967133485628,
+    "X": -95.05601694
+  },
+  {
+    "Carpeta": "6419/FIST/FMUJ-TEHUANTEPEC/2023",
+    "Región": "Istmo",
+    "Zona": "Vía pública",
+    "Y": 16.25757777777778,
+    "X": -94.14035278
+  },
+  {
+    "Carpeta": "43022/FIST/FMUJ-TEHUANTEPEC/2022",
+    "Región": "Istmo",
+    "Zona": "Vivienda",
+    "Y": 16.40533333333333,
+    "X": -95.03594444
+  },
+  {
+    "Carpeta": "2818/FIST/FMUJ-TEHUANTEPEC/2022",
+    "Región": "Istmo",
+    "Zona": "Vía pública",
+    "Y": 16.86317801962371,
+    "X": -95.07873449
+  },
+  {
+    "Carpeta": "8579/FIST/FMUJ-TEHUANTEPEC/2023",
+    "Región": "Istmo",
+    "Zona": "Vía pública",
+    "Y": 16.175858127071706,
+    "X": -95.15721662
+  },
+  {
+    "Carpeta": "8569/FIST/FMUJ-TEHUANTEPEC/2023",
+    "Región": "Istmo",
+    "Zona": "Vía pública",
+    "Y": 16.18042718625403,
+    "X": -95.19660452
+  },
+  {
+    "Carpeta": "890/FTDAI/2017",
+    "Región": "Cuenca",
+    "Zona": "Terreno",
+    "Y": 18.122949057532953,
+    "X": -96.19777313
+  },
+  {
+    "Carpeta": "03293/FTDAI/2016",
+    "Región": "Cuenca",
+    "Zona": "Vía pública",
+    "Y": 18.10509206401748,
+    "X": -96.16031303
+  },
+  {
+    "Carpeta": "2419/FTDAI/2016",
+    "Región": "Cuenca",
+    "Zona": "Lugar de trabajo",
+    "Y": 18.082084009784825,
+    "X": -96.13707778
+  },
+  {
+    "Carpeta": "26313/FIST/2024",
+    "Región": "Istmo",
+    "Zona": "Vivienda",
+    "Y": 16.338533398518834,
+    "X": -94.52888438
+  }
+]
