@@ -3,17 +3,9 @@ import MarkerClusterGroup from "react-leaflet-markercluster";
 import "leaflet/dist/leaflet.css";
 import "leaflet.markercluster/dist/MarkerCluster.css";
 import "leaflet.markercluster/dist/MarkerCluster.Default.css";
-import L from "leaflet";
-import hallazgo from "./modules/map/utils/hallazgo.json"
+import hallazgo from "../utils/hallazgo.json"
 
-const customIcon = new L.Icon({
-    iconUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png",
-    iconSize: [25, 41],
-    iconAnchor: [12, 41],
-    popupAnchor: [1, -34],
-});
-
-export default function MapTest() {
+export default function Main() {
     return (
         <MapContainer center={[17.064238826943054, -96.72367769482949]} zoom={5} className="w-full h-screen">
             <TileLayer
@@ -23,12 +15,12 @@ export default function MapTest() {
 
             <MarkerClusterGroup>
                 {hallazgo.map((marker, index) => (
-                    <Marker key={index} position={[marker.Y, marker.X]} icon={customIcon}>
+                    <Marker key={index} position={[marker.Y, marker.X]} >
                         <Popup>
                             <div>
-                                <h2>{`Víctima ${index + 1}`}</h2>
-                                <p>{`Región a la que pertenece: ${marker.Región}`}</p>
-                                <p>{`Tipo de lugar de Hallazgo: ${marker.Zona}`}</p>
+                                <h2 className="text-center font-bold uppercase">{`Víctima ${index + 1}`}</h2>
+                                <p><span className="font-bold">Región a la que pertenece: </span>{marker.Región}</p>
+                                <p><span className="font-bold">Tipo de lugar de Hallazgo: </span>{marker.Zona}</p>
                             </div>
                         </Popup>
                     </Marker>
@@ -36,5 +28,4 @@ export default function MapTest() {
             </MarkerClusterGroup>
         </MapContainer>
     );
-};
-
+}
