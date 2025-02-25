@@ -1,4 +1,4 @@
-function Acerca() {
+function Estadistica() {
     return (
       <div className="p-6">
         <h1 className="text-2xl font-bold">Estadística</h1>
@@ -7,5 +7,5 @@ function Acerca() {
     );
   }
   
-  export default Acerca;
+  export default Estadistica;
   

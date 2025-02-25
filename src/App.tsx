@@ -5,10 +5,11 @@ import NavBar from './core/components/navbar';
 import imagePath from './assets/banner_uac_2025.png?url';
 
 // Importar las páginas
-import Inicio from "./modules/map/screens/inicio";
-import Acerca from "./modules/map/screens/acerca";
-import Estadistica from "./modules/map/screens/estadistica";
-import Mapa from "./modules/map/screens/mapa";
+
+import Inicio from "./modules/map/sceens/inicio";
+import Acerca from "./modules/map/sceens/acerca";
+import Estadistica from "./modules/map/sceens/estadistica";
+import Mapa from "./modules/map/sceens/mapa";
 
 function App() {
   const items = ["Inicio", "Acerca del Atlas", "Estadística", "Mapa"];

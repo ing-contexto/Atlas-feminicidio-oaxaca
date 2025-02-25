@@ -1,11 +1,12 @@
-function Acerca() {
+import Main from "./main";
+
+function Mapa() {
     return (
-      <div className="p-6">
-        <h1 className="text-2xl font-bold">Mapa</h1>
-        <p className="mt-2">Aquí estará el mapa.</p>
+      <div className='w-full'>
+        <Main />
       </div>
     );
   }
   
-  export default Acerca;
+  export default Mapa;
   
