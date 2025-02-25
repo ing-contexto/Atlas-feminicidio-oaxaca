@@ -1,12 +1,11 @@
 export default interface Victim {
     id: number
     edad: number
+    fechaMuerte: Date
     ocupacion: string
     estadoCivil: string
-    hallazgo: {
-        latitud: string,
-        longitud: string
-    }
+    latitud: number,
+    longitud: number
     orientacion?: string
     identidadGenero?: string
     comunidadIndigena?: string

@@ -6,7 +6,6 @@ function App() {
 
   return (
     <div className='w-full'>
-      <h1>Prueba mapa</h1>
       <Main />
     </div>
   )
