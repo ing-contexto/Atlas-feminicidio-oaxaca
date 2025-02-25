@@ -1,11 +1,23 @@
 import { MapContainer, TileLayer, Marker, Popup, GeoJSON } from "react-leaflet";
 import MarkerClusterGroup from "react-leaflet-markercluster";
 import "leaflet/dist/leaflet.css";
+import L from "leaflet";
 import "leaflet.markercluster/dist/MarkerCluster.css";
 import "leaflet.markercluster/dist/MarkerCluster.Default.css";
+import markerIcon from "leaflet/dist/images/marker-icon.png";
+import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import Victim from "../model/victim";
 import { LatLngTuple } from "leaflet";
 import { useEffect, useState } from "react";
+
+const defaultIcon = new L.Icon({
+    iconUrl: markerIcon,
+    shadowUrl: markerShadow,
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
+});
 
 const styleAlerta = (feature: any) => {
     return {
@@ -138,7 +150,7 @@ export default function Map(props: { victims: Victim[], regions: boolean, alert:
 
             <MarkerClusterGroup key={props.victims.map(v => v.id).join('-')} >
                 {props.victims.map((marker, index) => (
-                    <Marker key={marker.id} position={[marker.latitud, marker.longitud]}>
+                    <Marker key={marker.id} position={[marker.latitud, marker.longitud]} icon={defaultIcon} >
                         <Popup>
                             <div>
                                 <h2 className="text-center font-bold uppercase">{`Víctima ${index + 1}`}</h2>
