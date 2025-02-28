@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import L from "leaflet";
 import { useMap } from "react-leaflet";
-import { alertaColor, carrEstatalcolor, carrFederalcolor, cañadaColor, costaColor, istmoColor, mixtecaColor, papaloapanColor, pobreza100Color, pobreza25Color, pobreza50Color, pobreza75Color, sierraNorteColor, sierraSurColor, vallesCentralesColor } from "../utils/colors";
+import { alertaColor, carrEstatalcolor, carrFederalcolor, cañadaColor, costaColor, istmoColor, mixtecaColor, papaloapanColor, pobreza100Color, pobreza25Color, pobreza50Color, pobreza75Color, sierraNorteColor, sierraSurColor, vallesCentralesColor } from "../styles/colors";
 
 const LEGEND_POSITION = "bottomright";
 

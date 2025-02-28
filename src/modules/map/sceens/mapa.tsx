@@ -34,6 +34,7 @@ const layers = [
 
 export default function Mapa() {
   const [selectedMonthIndex, setSelectedMonthIndex] = useState(0);
+  const [showFilter, setShowFilter] = useState(true);
   const [showAllVictims, setShowAllVictims] = useState(true);
   const [showUnderN, setShowUnderN] = useState(false);
   const [activeLayer, setActiveLayer] = useState(layers[0].value);
@@ -53,7 +54,10 @@ export default function Mapa() {
   return (
     <div className="p-4">
       <div className="relative">
-        <div className="absolute top-4 right-4 bg-white p-4 shadow-lg rounded-lg z-10 w-64">
+        <div className={`absolute md:hidden top-9 left-1 p-4 shadow-lg rounded-lg z-10 ${showFilter ? "bg-gray-200 text-gray-800" : "bg-blue-600 text-white"}`} onClick={() => {
+          setShowFilter(!showFilter);
+        }}>{showFilter ? "Ocultar filtros" : "Mostrar filtros"}</div>
+        <div className={`${showFilter ? "" : "hidden"} md:block absolute top-9 right-4 bg-white p-4 shadow-lg rounded-lg z-10 w-64`}>
           <h3 className="text-lg font-semibold mb-2">Filtros</h3>
 
           <label className="flex items-center space-x-2 mb-2">

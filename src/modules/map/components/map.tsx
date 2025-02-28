@@ -9,7 +9,7 @@ import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import Victim from "../model/victim";
 import { LatLngTuple } from "leaflet";
 import useGeoJsonData from "../hooks/useGeoJsonData";
-import { carrEstatalStyle, carrFederalStyle, estadoStyle, styleAlerta, stylePobreza, styleRegional } from "../utils/geoJsonStyles";
+import { carrEstatalStyle, carrFederalStyle, estadoStyle, styleAlerta, stylePobreza, styleRegional } from "../styles/geoJsonStyles";
 import Ficha from "./ficha";
 import Legend from "./legend";
 
