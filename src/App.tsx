@@ -10,16 +10,11 @@ import Acerca from "./modules/map/sceens/acerca";
 import Mapa from "./modules/map/sceens/mapa";
 
 function App() {
-  const items = [
-    { label: "Inicio", path: "/" },
-    { label: "Acerca del Atlas", path: "/acerca" },
-    { label: "Mapa", path: "/mapa" }
-  ];
 
   return (
     <div className="min-h-screen flex flex-col">
       <Router>
-      <NavBar imageSrcPath={imagePath} navItems={items} />
+      <NavBar imageSrcPath={imagePath} />
 
       <div className="w-full p-6 flex-grow">
         <Routes>
