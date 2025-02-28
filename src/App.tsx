@@ -10,9 +10,10 @@ import Inicio from "./modules/map/sceens/inicio";
 import Acerca from "./modules/map/sceens/acerca";
 import Estadistica from "./modules/map/sceens/estadistica";
 import Mapa from "./modules/map/sceens/mapa";
+import MarcoJuridico from "./modules/map/sceens/marcoJuridico";
 
 function App() {
-  const items = ["Inicio", "Acerca del Atlas", "Estadística", "Mapa"];
+  const items = ["Inicio", "Acerca del Atlas", "Estadística", "Mapa", "Marco jurídico"];
 
   return (
     <Router>
@@ -28,6 +29,7 @@ function App() {
           <Route path="/acerca" element={<Acerca />} />
           <Route path="/estadistica" element={<Estadistica />} />
           <Route path="/mapa" element={<Mapa />} />
+          <Route path="/marco-juridico" element={<MarcoJuridico />} />
         </Routes>
       </div>
     </Router>
