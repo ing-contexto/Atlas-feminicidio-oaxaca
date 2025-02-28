@@ -1,8 +1,8 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
 import "leaflet/dist/leaflet.css";
 import NavBar from './core/components/navbar';
-import imagePath from './assets/banner_uac_2025.png?url';
+import imagePath from './assets/logo fgeo atlasno circles.svg?url';
 
 // Importar las páginas
 import Inicio from "./modules/map/sceens/inicio";
