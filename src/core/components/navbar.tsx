@@ -3,7 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 
 interface NavBarProps {
   imageSrcPath: string;
-
 }
 
 function NavBar({ imageSrcPath }: NavBarProps) {
@@ -80,6 +79,16 @@ function NavBar({ imageSrcPath }: NavBarProps) {
                     onClick={() => setOpenDropdown(false)}
                   >
                     Acerca de
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    to="/marco_juridico"
+                    className="block px-4 py-2 hover:bg-gray-200"
+                    onClick={() => setOpenDropdown(false)}
+                  >
+                    Marco jurídico
                   </Link>
                 </li>
               </ul>

@@ -8,6 +8,7 @@ import imagePath from './assets/logo fgeo atlasno circles.svg?url';
 import Inicio from "./modules/map/sceens/inicio";
 import Acerca from "./modules/map/sceens/acerca";
 import Mapa from "./modules/map/sceens/mapa";
+import MarcoJuridico from "./modules/map/sceens/marcoJuridico";
 
 function App() {
 
@@ -18,9 +19,10 @@ function App() {
 
       <div className="w-full p-6 flex-grow">
         <Routes>
-        <Route path="/" element={<Inicio />} />
-        <Route path="/acerca" element={<Acerca />} />
-        <Route path="/mapa" element={<Mapa />} />
+          <Route path="/" element={<Inicio />} />
+          <Route path="/acerca" element={<Acerca />} />
+          <Route path="/mapa" element={<Mapa />} />
+          <Route path="/marco_juridico" element={<MarcoJuridico />} />
         </Routes>
       </div>
 
