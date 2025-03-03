@@ -91,18 +91,21 @@ function NavBar({ imageSrcPath }: NavBarProps) {
                     Marco jurídico
                   </Link>
                 </li>
-
-                <li>
-                  <Link
-                    to="/reloj_criminologico"
-                    className="block px-4 py-2 hover:bg-gray-200"
-                    onClick={() => setOpenDropdown(false)}
-                  >
-                    Reloj criminológico
-                  </Link>
-                </li>
               </ul>
             )}
+          </li>
+
+          {/* Reloj criminologico */}
+          <li>
+            <Link
+              to="/reloj_criminologico"
+              className={`px-3 py-2 block ${
+                location.pathname === "/reloj_criminologico" ? "text-white font-bold border-b-2 border-white" : "text-white hover:text-white"
+              }`}
+              onClick={() => setOpenDropdown(false)}
+            >
+              Reloj criminológico
+            </Link>
           </li>
         </ul>
       </div>
