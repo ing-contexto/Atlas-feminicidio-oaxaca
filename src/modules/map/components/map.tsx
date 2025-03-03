@@ -4,8 +4,10 @@ import "leaflet/dist/leaflet.css";
 import "leaflet.markercluster/dist/MarkerCluster.css";
 import "leaflet.markercluster/dist/MarkerCluster.Default.css";
 import Victim from "../model/victim";
-import { LatLngTuple } from "leaflet";
+import { LatLngTuple, Icon } from "leaflet";
 import { useEffect, useState } from "react";
+import yellowIcon from "../../../assets/marker-icon-yellow.png"
+import cyanIcon from "../../../assets/marker-icon-cyan.png"
 
 const styleAlerta = (feature: any) => {
     return {
@@ -56,6 +58,17 @@ const styleRegional = (feature: any) => {
     };
 };
 
+ //When homicide use yellow icon
+ const yellowMarkerIcon = new Icon({
+     iconUrl: yellowIcon,
+     iconSize: [25, 41],
+ });
+
+// When feminicide use cyan icon
+ const cyanMarkerIcon = new Icon({
+     iconUrl: cyanIcon,
+     iconSize: [25, 41],
+ });
 
 export default function Map(props: { victims: Victim[], regions: boolean, alert: boolean }) {
     const [geoJsonData, setGeoJsonData] = useState<{ [key: string]: any }>({});
@@ -138,7 +151,15 @@ export default function Map(props: { victims: Victim[], regions: boolean, alert:
 
             <MarkerClusterGroup key={props.victims.map(v => v.id).join('-')} >
                 {props.victims.map((marker, index) => (
-                    <Marker key={marker.id} position={[marker.latitud, marker.longitud]}>
+                    <Marker 
+                        key={marker.id} 
+                        position={[marker.latitud, marker.longitud]}
+                        //Esto es un ejemplo de como cambiar el marcador dependiendo de la variable estadoCivil, cambiar por la variable de tipo de delito
+                        icon={
+                            marker.estadoCivil === 'soltera' ? yellowMarkerIcon :
+                            cyanMarkerIcon
+                          }
+                    >
                         <Popup>
                             <div>
                                 <h2 className="text-center font-bold uppercase">{`Víctima ${index + 1}`}</h2>
