@@ -2,37 +2,39 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
 import "leaflet/dist/leaflet.css";
 import NavBar from './core/components/navbar';
-import imagePath from './assets/banner_uac_2025.png?url';
+import imagePath from './assets/logo fgeo atlasno circles.svg?url';
 
-// Importar las páginas
-
+// Importar pages
 import Inicio from "./modules/map/sceens/inicio";
 import Acerca from "./modules/map/sceens/acerca";
-import Estadistica from "./modules/map/sceens/estadistica";
 import Mapa from "./modules/map/sceens/mapa";
 import MarcoJuridico from "./modules/map/sceens/marcoJuridico";
+import RelojCriminologico from "./modules/map/sceens/relojCriminologico";
 
 function App() {
-  const items = ["Inicio", "Acerca del Atlas", "Estadística", "Mapa", "Marco jurídico"];
 
   return (
-    <Router>
-      <NavBar imageSrcPath={imagePath} navItems={items} />
+    <div className="min-h-screen flex flex-col">
+      <Router>
+      <NavBar imageSrcPath={imagePath} />
 
-      <div className="bg-blue-900 text-white py-4 text-center">
-        <h1 className="text-3xl font-bold">Atlas feminicida de Oaxaca</h1>
-      </div>
-
-      <div className="w-full p-6">
+      <div className="w-full p-6 flex-grow">
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/acerca" element={<Acerca />} />
-          <Route path="/estadistica" element={<Estadistica />} />
           <Route path="/mapa" element={<Mapa />} />
-          <Route path="/marco-juridico" element={<MarcoJuridico />} />
+          <Route path="/marco_juridico" element={<MarcoJuridico />} />
+          <Route path="/reloj_criminologico" element={<RelojCriminologico />} />
         </Routes>
       </div>
-    </Router>
+
+      <footer className="w-full" style={{ backgroundColor: '#213B7C', color: 'white', padding: '1rem', textAlign: 'left' }}>
+        <div className="container mx-auto px-4">
+        <p>&copy; 2025 Atlas feminicida de Oaxaca. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+      </Router>
+    </div>
   );
 }
 
