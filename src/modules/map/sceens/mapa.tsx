@@ -48,7 +48,7 @@ export default function Mapa() {
     });
 
   if (showUnderN) {
-    filteredVictims = filteredVictims.filter(victim => victim.edad < 30);
+    filteredVictims = filteredVictims.filter(victim => victim.edad < 18);
   }
 
   return (
