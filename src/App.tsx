@@ -9,6 +9,7 @@ import Inicio from "./modules/map/sceens/inicio";
 import Acerca from "./modules/map/sceens/acerca";
 import Mapa from "./modules/map/sceens/mapa";
 import MarcoJuridico from "./modules/map/sceens/marcoJuridico";
+import RelojCriminologico from "./modules/map/sceens/relojCriminologico";
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/acerca" element={<Acerca />} />
           <Route path="/mapa" element={<Mapa />} />
           <Route path="/marco_juridico" element={<MarcoJuridico />} />
+          <Route path="/reloj_criminologico" element={<RelojCriminologico />} />
         </Routes>
       </div>
 
