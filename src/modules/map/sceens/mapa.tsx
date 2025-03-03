@@ -10,7 +10,7 @@ const victims: Victim[] = victimsData.map(victim => ({
 
 const generateMonths = () => {
   const months = [];
-  for (let year = 2020; year <= 2023; year++) {
+  for (let year = 2024; year <= 2024; year++) {
     for (let month = 1; month <= 12; month++) {
       months.push(`${year}-${month.toString().padStart(2, '0')}`);
     }
@@ -48,7 +48,7 @@ export default function Mapa() {
     });
 
   if (showUnderN) {
-    filteredVictims = filteredVictims.filter(victim => victim.edad < 30);
+    filteredVictims = filteredVictims.filter(victim => victim.edad < 18);
   }
 
   return (

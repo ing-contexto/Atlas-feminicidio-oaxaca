@@ -5,8 +5,9 @@ export default interface Victim {
     ocupacion: string
     estadoCivil: string
     latitud: number,
-    longitud: number
-    orientacion?: string
+    longitud: number,
+    municipio: string,
+    delito: string,
     identidadGenero?: string
     comunidadIndigena?: string
 }
