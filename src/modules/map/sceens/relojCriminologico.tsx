@@ -8,7 +8,7 @@ function RelojCrimi() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold text-center mb-4">Reloj Criminológico: La frecuencia del feminicidio en Oaxaca</h1>
+      <h1 className="text-3xl font-bold text-center mb-4">Reloj Criminológico</h1>
       <div style={{ textAlign: "justify" }}>
         <p>
         Es una herramienta de análisis en la cual se registran las horas en las que se reportan casos de feminicidio en el Estado, con el objetivo de priorizar y enfocar la atención en esos momentos, lo que permite combatir el delito optimizando los recursos en materia de seguridad.
