@@ -50,8 +50,12 @@ export default function MarcoJuridico() {
             <CollapsibleMenu title="Código Penal Federal">
                 <p>
                     <span className="font-bold">Artículo 325.</span> Comete el delito de feminicidio quien prive de la vida a una mujer por una razón de género.
+                </p>
+                <br></br>
+                <p>
                     Se considera que existe una razón de género cuando concurra cualquiera de las siguientes circunstancias:
                 </p>
+
                 <p className="ml-2">I.La víctima presente signos de violencia sexual de cualquier tipo;
                 </p>
                 <p className="ml-2">II. A la víctima se le hayan infligido lesiones o mutilaciones infamantes o degradantes, previas o posteriores a la privación de la vida o actos de necrofilia;
@@ -133,8 +137,18 @@ export default function MarcoJuridico() {
                 </p>
                 <p className="ml-2">
                     XI. El cuerpo, cadáver o restos de la víctima hayan sido expuestos, abandonados, exhibidos, depositados, arrojados o enterrados en un lugar público, o de uso común o cualquier espacio de libre concurrencia.
+                </p>
+                <br></br>
+                <p className="ml-2">
                     Se entenderá como desprecio u odio cuando el activo realice conductas humillantes o degradantes, antes o durante la privación de la vida, así como actos de profanación al cadáver, incluidos actos de necrofilia.
+                </p>
+                <br></br>
+                <p className="ml-2">
                     Se entiende por misoginia las conductas de odio contra la mujer que se manifiestan mediante actos violentos o crueles contra ella.
+                    Todas las muertes violentas de una mujer, incluidas aquellas que en principio parecieran haber sido causadas por motivos criminales, suicidio y algunos accidentes, deben investigarse como probable feminicidio. Cuando no se acredite el feminicidio se aplicarán las reglas del homicidio.
+                </p>
+                <br></br>
+                <p className="ml-2">
                     Todas las muertes violentas de una mujer, incluidas aquellas que en principio parecieran haber sido causadas por motivos criminales, suicidio y algunos accidentes, deben investigarse como probable feminicidio. Cuando no se acredite el feminicidio se aplicarán las reglas del homicidio.
                 </p>
             </CollapsibleMenu>
