@@ -19,7 +19,7 @@ function Acerca() {
 
       <div style={{ textAlign: "justify" }}>
         <p>
-        La información que se presenta, se toma de las carpetas de investigación, a través de la colaboración con las fiscalías generales, especializadas y las vicefiscalías regionales, identificando el delito, datos de la víctima, como edad, sexo, pertenencia a pueblo indígena, orientación sexual, identidad de género y ocupación; posteriormente se corroboró esta información con aquella que fue validada por la Dirección de Análisis e Inteligencia, y así, se georreferenció la información a través de las siguientes herramientas y programas: para la información estadística categorizada el Excel.
+        La información que se presenta, se toma de las carpetas de investigación, a través de la colaboración con las fiscalías generales, especializadas y las vicefiscalías regionales, identificando el delito, datos de la víctima, como edad, sexo, pertenencia a pueblo indígena, orientación sexual, identidad de género y ocupación; posteriormente se corroboró esta información con aquella que fue validada por la Dirección de Análisis e Inteligencia, y así, se georreferenció la información a través de las siguientes herramientas y programas: para la información estadística categorizada el Excel. Para la elaboración de los mapas, la información fue procesada en Qgis y Python, para verificar la información se usó Google Maps, para su visualización se utilizó la librería de JavaScript Leaflet.
         </p>
       </div>
       <br></br>
