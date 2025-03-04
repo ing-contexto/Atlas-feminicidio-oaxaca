@@ -12,9 +12,31 @@ import useGeoJsonData from "../hooks/useGeoJsonData";
 import { carrEstatalStyle, carrFederalStyle, estadoStyle, styleAlerta, stylePobreza, styleRegional } from "../styles/geoJsonStyles";
 import Ficha from "./ficha";
 import Legend from "./legend";
+import yellowIcon from "../../../assets/marker-icon-yellow.png"
+import cyanIcon from "../../../assets/marker-icon-cyan.png"
 
 const defaultIcon = new L.Icon({
     iconUrl: markerIcon,
+    shadowUrl: markerShadow,
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
+});
+
+//Icono homicidio doloso
+const yellowMarkerIcon = new L.Icon({
+    iconUrl: yellowIcon,
+    shadowUrl: markerShadow,
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
+});
+
+//Icono feminicidio
+const cyanMarkerIcon = new L.Icon({
+    iconUrl: cyanIcon,
     shadowUrl: markerShadow,
     iconSize: [25, 41],
     iconAnchor: [12, 41],
@@ -66,13 +88,21 @@ export default function Map(props: { victims: Victim[], activeLayer: string }) {
         }
 
         <MarkerClusterGroup key={props.victims.length} >
-            {props.victims.map((victima) => (
-                <Marker key={victima.id} position={[victima.latitud, victima.longitud]} icon={defaultIcon} >
-                    <Popup>
-                        <Ficha victima={victima} />
-                    </Popup>
+            {props.victims.map((victima) => {
+            let icon = defaultIcon;
+            if (victima.delito === "homicidio doloso") {
+                icon = yellowMarkerIcon;
+            } else if (victima.delito === "feminicidio") {
+                icon = cyanMarkerIcon;
+            }
+            return (
+                <Marker key={victima.id} position={[victima.latitud, victima.longitud]} icon={icon} >
+                <Popup>
+                    <Ficha victima={victima} />
+                </Popup>
                 </Marker>
-            ))}
+            );
+            })}
         </MarkerClusterGroup>
         <Legend activeLayer={props.activeLayer} />
     </MapContainer>
