@@ -8,16 +8,20 @@ const victims: Victim[] = victimsData.map(victim => ({
   fechaMuerte: new Date(victim.fechaMuerte)
 }));
 
-const generateMonths = () => {
+const generateMonths = (initialYear: number, finalYear: number, finalMonth: number) => {
   const months = [];
-  for (let year = 2024; year <= 2024; year++) {
-    for (let month = 1; month <= 12; month++) {
+  for (let year = initialYear; year <= finalYear; year++) {
+    const maxMonth = year === 2024 ? 12 : finalMonth;
+    for (let month = 1; month <= maxMonth; month++) {
       months.push(`${year}-${month.toString().padStart(2, '0')}`);
     }
   }
   return months;
 };
-const months = generateMonths();
+
+const months = generateMonths(2024, 2025, 1);
+console.log(months);
+
 
 const formatMonth = (monthString: string) => {
   const [year, month] = monthString.split("-");
@@ -29,7 +33,8 @@ const formatMonth = (monthString: string) => {
 const layers = [
   { value: "regions", label: "Regiones del estado" },
   { value: "alert", label: "Municipios con alerta de género" },
-  { value: "poverty", label: "Pobreza por municipio" }
+  { value: "poverty", label: "Pobreza por municipio" },
+  { value: "poverty_ext", label: "Municipios con pobreza extrema" }
 ];
 
 export default function Mapa() {

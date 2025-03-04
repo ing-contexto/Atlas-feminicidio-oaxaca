@@ -5,12 +5,13 @@ export default function getGeoJsonData(): Promise<any> {
         "/geojson/carr_federal.geojson",
         "/geojson/municipal.geojson",
         "/geojson/regional.geojson",
-        "/geojson/mun_pobreza.geojson"
+        "/geojson/mun_pobreza.geojson",
+        "/geojson/halladas.geojson"
     ];
 
     return Promise.all(urls.map(url => fetch(url).then(response => response.json())))
-        .then(([estado, carr_estatal, carr_federal, municipal, regional, pobreza]) => {
-            return [estado, carr_estatal, carr_federal, municipal, regional, pobreza]
+        .then(([estado, carr_estatal, carr_federal, municipal, regional, pobreza, halladas]) => {
+            return [estado, carr_estatal, carr_federal, municipal, regional, pobreza, halladas]
         })
         .catch(error => console.error("Error cargando GeoJSON:", error));
 }

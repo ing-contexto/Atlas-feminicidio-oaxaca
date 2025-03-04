@@ -52,9 +52,17 @@ export const styleRegional = (feature: Feature<Geometry, any> | undefined) => {
 };
 
 export const stylePobreza = (feature: Feature<Geometry, any> | undefined) => {
+    if (feature?.properties.halladas == null) {
+
+        return {
+            fillColor: "#ffffff",
+            color: "#000000",
+            weight: 0.125,
+            fillOpacity: 0
+        }
+    }
     let color;
     const pobreza = Number(feature?.properties.pobreza_por?.replace("%", "").replace(",", "."));
-
     if (pobreza >= 0 && pobreza < 25) {
         color = pobreza25Color
     } else if (pobreza >= 25 && pobreza < 50) {
@@ -75,7 +83,7 @@ export const stylePobreza = (feature: Feature<Geometry, any> | undefined) => {
     };
 };
 
-export const stylePobrezaV2 = (feature: Feature<Geometry, any> | undefined) => {
+export const stylePobrezaExt = (feature: Feature<Geometry, any> | undefined) => {
     let opacity = 0;
     const pobreza = Number(feature?.properties.pobreza_ext_por?.replace("%", "").replace(",", "."));
 

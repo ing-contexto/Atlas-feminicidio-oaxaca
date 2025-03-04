@@ -9,7 +9,7 @@ import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import Victim from "../model/victim";
 import { LatLngTuple } from "leaflet";
 import useGeoJsonData from "../hooks/useGeoJsonData";
-import { carrEstatalStyle, carrFederalStyle, estadoStyle, styleAlerta, stylePobreza, stylePobrezaV2, stylePobrezaV3, styleRegional } from "../styles/geoJsonStyles";
+import { carrEstatalStyle, carrFederalStyle, estadoStyle, styleAlerta, stylePobreza, stylePobrezaExt, styleRegional } from "../styles/geoJsonStyles";
 import Ficha from "./ficha";
 import Legend from "./legend";
 import yellowIcon from "../../../assets/marker-icon-yellow.png"
@@ -24,7 +24,6 @@ const defaultIcon = new L.Icon({
     shadowSize: [41, 41]
 });
 
-//Icono homicidio doloso
 const yellowMarkerIcon = new L.Icon({
     iconUrl: yellowIcon,
     shadowUrl: markerShadow,
@@ -34,7 +33,6 @@ const yellowMarkerIcon = new L.Icon({
     shadowSize: [41, 41]
 });
 
-//Icono feminicidio
 const cyanMarkerIcon = new L.Icon({
     iconUrl: cyanIcon,
     shadowUrl: markerShadow,
@@ -83,25 +81,28 @@ export default function Map(props: { victims: Victim[], activeLayer: string }) {
         {geoJsonData.regional && props.activeLayer == "regions" && <GeoJSON data={geoJsonData.regional}
             style={styleRegional} />
         }
-        {geoJsonData.pobreza && props.activeLayer == "poverty" && <GeoJSON data={geoJsonData.pobreza}
-            style={stylePobrezaV2} />
+        {geoJsonData.halladas && props.activeLayer == "poverty" && <GeoJSON data={geoJsonData.halladas}
+            style={stylePobreza} />
+        }
+        {geoJsonData.pobreza && props.activeLayer == "poverty_ext" && <GeoJSON data={geoJsonData.pobreza}
+            style={stylePobrezaExt} />
         }
 
         <MarkerClusterGroup key={props.victims.length} >
             {props.victims.map((victima) => {
-            let icon = defaultIcon;
-            if (victima.delito === "homicidio doloso") {
-                icon = yellowMarkerIcon;
-            } else if (victima.delito === "feminicidio") {
-                icon = cyanMarkerIcon;
-            }
-            return (
-                <Marker key={victima.id} position={[victima.latitud, victima.longitud]} icon={icon} >
-                <Popup>
-                    <Ficha victima={victima} />
-                </Popup>
-                </Marker>
-            );
+                let icon = defaultIcon;
+                if (victima.delito === "homicidio doloso") {
+                    icon = yellowMarkerIcon;
+                } else if (victima.delito === "feminicidio") {
+                    icon = cyanMarkerIcon;
+                }
+                return (
+                    <Marker key={victima.id} position={[victima.latitud, victima.longitud]} icon={icon} >
+                        <Popup>
+                            <Ficha victima={victima} />
+                        </Popup>
+                    </Marker>
+                );
             })}
         </MarkerClusterGroup>
         <Legend activeLayer={props.activeLayer} />
