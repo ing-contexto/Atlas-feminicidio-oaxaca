@@ -9,12 +9,13 @@ export const cañadaColor = "#00ffff";
 export const vallesCentralesColor = "#ffa500";
 export const papaloapanColor = "#800080";
 
-export const pobreza25Color = "#00ff00";
-export const pobreza50Color = "#ffff00";
-export const pobreza75Color = "#ff8000";
-export const pobreza100Color = "#ff0000";
+export const pobreza25Color = "#e6aa77"; // Verde convertido a gris
+export const pobreza50Color = "#aa7444"; // Amarillo convertido a gris
+export const pobreza75Color = "#704214"; // Naranja convertido a gris
+export const pobreza100Color = "#46220f"; // Rojo convertido a gris
 
-export const carrEstatalcolor = "#D6860D";
+
+export const carrEstatalcolor = "#cf881d";
 export const carrFederalcolor = "#987940";
 
 

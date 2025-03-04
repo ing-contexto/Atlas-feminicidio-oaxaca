@@ -79,7 +79,7 @@ export const stylePobreza = (feature: Feature<Geometry, any> | undefined) => {
         fillColor: color,
         color: "#000000",
         weight: 0.125,
-        fillOpacity: 0.25
+        fillOpacity: 0.55
     };
 };
 
@@ -88,7 +88,7 @@ export const stylePobrezaExt = (feature: Feature<Geometry, any> | undefined) => 
     const pobreza = Number(feature?.properties.pobreza_ext_por?.replace("%", "").replace(",", "."));
 
     if (pobreza >= 50 && pobreza <= 100) {
-        opacity = 0.25
+        opacity = 0.35
     }
 
     return {
