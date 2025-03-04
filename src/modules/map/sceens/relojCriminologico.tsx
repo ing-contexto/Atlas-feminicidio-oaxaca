@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import relojM from "../../../assets/reloj_m.png";
 import relojH from "../../../assets/reloj_h.png";
-import relojAmbos from "../../../assets/Reloj.png";
+import relojAmbos from "../../../assets/reloj_ambos.png";
 
 function RelojCrimi() {
   const [horaMuerte, setHoraMuerte] = useState(true);
