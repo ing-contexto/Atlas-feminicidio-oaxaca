@@ -5,7 +5,6 @@ import relojH from "../../../assets/reloj_h.png";
 import relojAmbos from "../../../assets/Reloj.png";
 
 function RelojCrimi() {
-  // Ambos checkboxes activos por defecto
   const [horaMuerte, setHoraMuerte] = useState(true);
   const [horaDenuncia, setHoraDenuncia] = useState(true);
 
