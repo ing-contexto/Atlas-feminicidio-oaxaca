@@ -28,8 +28,16 @@ const legendAlertItems = [
     { color: alertaColor, label: "Municipios con Alerta de género" },
 ]
 
+const legendPovertyExtItems = [
+    { color: pobreza100Color, label: "Municipios con población en pobreza extrema mayor al 50%" },
+]
+
 function LegendPanel(props: { activeLayer: string }) {
-    const legendItems = props.activeLayer === "regions" ? legendStateItems : props.activeLayer === "poverty" ? legendPovertyItems : legendAlertItems;
+    const legendItems =
+        props.activeLayer === "regions" ? legendStateItems :
+            props.activeLayer === "poverty" ? legendPovertyItems :
+                props.activeLayer === "poverty_ext" ? legendPovertyExtItems :
+                    legendAlertItems;
     return (
         <div className="bg-white p-3 rounded-lg shadow-lg text-sm">
             <strong className="block mb-1">Simbología</strong>
