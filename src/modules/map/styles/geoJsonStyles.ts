@@ -1,6 +1,6 @@
 
 import { Feature, Geometry } from 'geojson';
-import { alertaColor, carrEstatalcolor, carrFederalcolor, cañadaColor, costaColor, istmoColor, mixtecaColor, papaloapanColor, pobreza100Color, pobreza25Color, pobreza50Color, pobreza75Color, sierraNorteColor, sierraSurColor, vallesCentralesColor } from './colors';
+import { alertaColor, carrEstatalcolor, carrFederalcolor, cañadaColor, costaColor, incidenciasColor, istmoColor, mixtecaColor, papaloapanColor, pobreza100Color, pobreza25Color, pobreza50Color, pobreza75Color, sierraNorteColor, sierraSurColor, vallesCentralesColor } from './colors';
 
 export const styleAlerta = (feature: Feature<Geometry, any> | undefined) => {
     return {
@@ -61,22 +61,9 @@ export const stylePobreza = (feature: Feature<Geometry, any> | undefined) => {
             fillOpacity: 0
         }
     }
-    let color;
-    const pobreza = Number(feature?.properties.pobreza_por?.replace("%", "").replace(",", "."));
-    if (pobreza >= 0 && pobreza < 25) {
-        color = pobreza25Color
-    } else if (pobreza >= 25 && pobreza < 50) {
-        color = pobreza50Color
-    } else if (pobreza >= 50 && pobreza < 75) {
-        color = pobreza75Color
-    } else if (pobreza >= 75 && pobreza <= 100) {
-        color = pobreza100Color
-    } else {
-        color = "#ffffff"
-    }
 
     return {
-        fillColor: color,
+        fillColor: incidenciasColor,
         color: "#000000",
         weight: 0.125,
         fillOpacity: 0.55

@@ -57,6 +57,7 @@ export default function Map(props: { victims: Victim[], activeLayer: string }) {
         maxBounds={bounds}
         maxBoundsViscosity={1.0}
         minZoom={8}
+        maxZoom={13}
     >
         <TileLayer
             url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
@@ -81,7 +82,7 @@ export default function Map(props: { victims: Victim[], activeLayer: string }) {
         {geoJsonData.regional && props.activeLayer == "regions" && <GeoJSON data={geoJsonData.regional}
             style={styleRegional} />
         }
-        {geoJsonData.halladas && props.activeLayer == "poverty" && <GeoJSON data={geoJsonData.halladas}
+        {geoJsonData.halladas && props.activeLayer == "incidencias" && <GeoJSON data={geoJsonData.halladas}
             style={stylePobreza} />
         }
         {geoJsonData.pobreza && props.activeLayer == "poverty_ext" && <GeoJSON data={geoJsonData.pobreza}

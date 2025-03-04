@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import L from "leaflet";
 import { useMap } from "react-leaflet";
-import { alertaColor, carrEstatalcolor, carrFederalcolor, cañadaColor, costaColor, istmoColor, mixtecaColor, papaloapanColor, pobreza100Color, pobreza25Color, pobreza50Color, pobreza75Color, sierraNorteColor, sierraSurColor, vallesCentralesColor } from "../styles/colors";
+import { alertaColor, carrEstatalcolor, carrFederalcolor, cañadaColor, costaColor, incidenciasColor, istmoColor, mixtecaColor, papaloapanColor, pobreza100Color, pobreza25Color, pobreza50Color, pobreza75Color, sierraNorteColor, sierraSurColor, vallesCentralesColor } from "../styles/colors";
 
 const LEGEND_POSITION = "bottomright";
 
@@ -18,10 +18,7 @@ const legendStateItems = [
 ]
 
 const legendPovertyItems = [
-    { color: pobreza25Color, label: "Porcentaje de la población en situación de pobreza (0 - 25%)" },
-    { color: pobreza50Color, label: "Porcentaje de la población en situación de pobreza (25 - 50%)" },
-    { color: pobreza75Color, label: "Porcentaje de la población en situación de pobreza (50 - 75%)" },
-    { color: pobreza100Color, label: "Porcentaje de la población en situación de pobreza (75 - 100%)" }
+    { color: incidenciasColor, label: "Municipios con incidencias registradas" },
 ]
 
 const legendAlertItems = [
@@ -35,7 +32,7 @@ const legendPovertyExtItems = [
 function LegendPanel(props: { activeLayer: string }) {
     const legendItems =
         props.activeLayer === "regions" ? legendStateItems :
-            props.activeLayer === "poverty" ? legendPovertyItems :
+            props.activeLayer === "incidencias" ? legendPovertyItems :
                 props.activeLayer === "poverty_ext" ? legendPovertyExtItems :
                     legendAlertItems;
     return (

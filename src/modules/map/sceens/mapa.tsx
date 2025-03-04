@@ -32,8 +32,9 @@ const formatMonth = (monthString: string) => {
 
 const layers = [
   { value: "regions", label: "Regiones del estado" },
+  { value: "incidencias", label: "Municipios con incidencias registradas" },
   { value: "alert", label: "Municipios con alerta de género" },
-  { value: "poverty", label: "Pobreza por municipio" },
+
   { value: "poverty_ext", label: "Municipios con pobreza extrema" }
 ];
 
