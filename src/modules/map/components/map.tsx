@@ -9,7 +9,7 @@ import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import Victim from "../model/victim";
 import { LatLngTuple } from "leaflet";
 import useGeoJsonData from "../hooks/useGeoJsonData";
-import { carrEstatalStyle, carrFederalStyle, estadoStyle, styleAlerta, stylePobreza, styleRegional } from "../styles/geoJsonStyles";
+import { carrEstatalStyle, carrFederalStyle, estadoStyle, styleAlerta, stylePobreza, stylePobrezaV2, stylePobrezaV3, styleRegional } from "../styles/geoJsonStyles";
 import Ficha from "./ficha";
 import Legend from "./legend";
 
@@ -62,7 +62,7 @@ export default function Map(props: { victims: Victim[], activeLayer: string }) {
             style={styleRegional} />
         }
         {geoJsonData.pobreza && props.activeLayer == "poverty" && <GeoJSON data={geoJsonData.pobreza}
-            style={stylePobreza} />
+            style={stylePobrezaV2} />
         }
 
         <MarkerClusterGroup key={props.victims.length} >
