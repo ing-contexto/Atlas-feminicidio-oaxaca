@@ -1,10 +1,10 @@
 
 import { Feature, Geometry } from 'geojson';
-import { carrEstatalcolor, carrFederalcolor, cañadaColor, costaColor, istmoColor, mixtecaColor, papaloapanColor, pobreza100Color, pobreza25Color, pobreza50Color, pobreza75Color, sierraNorteColor, sierraSurColor, vallesCentralesColor } from './colors';
+import { alertaColor, carrEstatalcolor, carrFederalcolor, cañadaColor, costaColor, istmoColor, mixtecaColor, papaloapanColor, pobreza100Color, pobreza25Color, pobreza50Color, pobreza75Color, sierraNorteColor, sierraSurColor, vallesCentralesColor } from './colors';
 
 export const styleAlerta = (feature: Feature<Geometry, any> | undefined) => {
     return {
-        fillColor: "#60f482",
+        fillColor: alertaColor,
         color: "#000000",
         weight: .125,
         fillOpacity: feature?.properties.alertaGenero == true ? .35 : 0
@@ -52,8 +52,56 @@ export const styleRegional = (feature: Feature<Geometry, any> | undefined) => {
 };
 
 export const stylePobreza = (feature: Feature<Geometry, any> | undefined) => {
+    if (feature?.properties.halladas == null) {
+
+        return {
+            fillColor: "#ffffff",
+            color: "#000000",
+            weight: 0.125,
+            fillOpacity: 0
+        }
+    }
     let color;
     const pobreza = Number(feature?.properties.pobreza_por?.replace("%", "").replace(",", "."));
+    if (pobreza >= 0 && pobreza < 25) {
+        color = pobreza25Color
+    } else if (pobreza >= 25 && pobreza < 50) {
+        color = pobreza50Color
+    } else if (pobreza >= 50 && pobreza < 75) {
+        color = pobreza75Color
+    } else if (pobreza >= 75 && pobreza <= 100) {
+        color = pobreza100Color
+    } else {
+        color = "#ffffff"
+    }
+
+    return {
+        fillColor: color,
+        color: "#000000",
+        weight: 0.125,
+        fillOpacity: 0.25
+    };
+};
+
+export const stylePobrezaExt = (feature: Feature<Geometry, any> | undefined) => {
+    let opacity = 0;
+    const pobreza = Number(feature?.properties.pobreza_ext_por?.replace("%", "").replace(",", "."));
+
+    if (pobreza >= 50 && pobreza <= 100) {
+        opacity = 0.25
+    }
+
+    return {
+        fillColor: pobreza100Color,
+        color: "#000000",
+        weight: 0.125,
+        fillOpacity: opacity
+    };
+};
+
+export const stylePobrezaV3 = (feature: Feature<Geometry, any> | undefined) => {
+    let color;
+    const pobreza = Number(feature?.properties.pobreza_ext_por?.replace("%", "").replace(",", "."));
 
     if (pobreza >= 0 && pobreza < 25) {
         color = pobreza25Color
@@ -91,7 +139,6 @@ export const carrFederalStyle = {
 
 export const estadoStyle = {
     color: "#000000",
-    fillColor: "#ffcccc",
     weight: 3,
     fillOpacity: 0
 }
