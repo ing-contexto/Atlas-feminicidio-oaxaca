@@ -28,11 +28,12 @@ function App() {
         </Routes>
       </div>
 
-      <footer className="w-full" style={{ backgroundColor: '#213B7C', color: 'white', padding: '1rem', textAlign: 'left' }}>
-        <div className="container mx-auto px-4">
-        <p>&copy; 2025 Atlas feminicida de Oaxaca. Todos los derechos reservados.</p>
+      <footer className="w-full bg-[#213B7C] text-white py-4 text-center">
+        <div className="container mx-auto px-4 max-w-full">
+          <p>&copy; 2025 Atlas Feminicida de Oaxaca. Todos los derechos reservados.</p>
         </div>
       </footer>
+
       </Router>
     </div>
   );
