@@ -6,7 +6,7 @@ import imagePath from './assets/logo fgeo atlasno circles.svg?url';
 
 // Importar pages
 import Inicio from "./modules/map/sceens/inicio";
-import Acerca from "./modules/map/sceens/acerca";
+import Metodologia from "./modules/map/sceens/metodologia";
 import Mapa from "./modules/map/sceens/mapa";
 import MarcoJuridico from "./modules/map/sceens/marcoJuridico";
 import RelojCriminologico from "./modules/map/sceens/relojCriminologico";
@@ -21,7 +21,7 @@ function App() {
       <div className="w-full p-6 flex-grow">
         <Routes>
           <Route path="/" element={<Inicio />} />
-          <Route path="/acerca" element={<Acerca />} />
+          <Route path="/metodologia" element={<Metodologia />} />
           <Route path="/mapa" element={<Mapa />} />
           <Route path="/marco_juridico" element={<MarcoJuridico />} />
           <Route path="/reloj_criminologico" element={<RelojCriminologico />} />
