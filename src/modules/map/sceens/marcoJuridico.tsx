@@ -44,7 +44,7 @@ export default function MarcoJuridico() {
                 <p><span className="font-bold">ARTÍCULO 3. </span> Todas las medidas que se deriven de la presente ley, garantizarán la prevención, la atención, la sanción y la erradicación de todos los tipos de violencia contra las mujeres durante su ciclo de vida y para promover su desarrollo integral y su plena participación en todas las esferas de la vida.
                 </p>
                 <p><span className="font-bold">ARTÍCULO 21. </span> Violencia Feminicida: Es la forma extrema de violencia de género contra las mujeres, las adolescentes y las niñas, producto de la violación de sus derechos humanos y del ejercicio abusivo del poder, tanto en los ámbitos público y privado, que puede conllevar impunidad social y del Estado. Se manifiesta a través de conductas de odio y discriminación que ponen en riesgo sus vidas o culminan en muertes violentas como el feminicidio, el suicidio y el homicidio, u otras formas de muertes evitables y en conductas que afectan gravemente la integridad, la seguridad, la libertad personal y el libre desarrollo de las mujeres, las adolescentes y las niñas.
-                    En los casos de feminicidio se aplicarán las sanciones previstas en la legislación penal sustantiva.
+                    <br></br>En los casos de feminicidio se aplicarán las sanciones previstas en la legislación penal sustantiva.
                 </p>
             </CollapsibleMenu>
             <CollapsibleMenu title="Código Penal Federal">

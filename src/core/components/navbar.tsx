@@ -42,7 +42,7 @@ function NavBar({ imageSrcPath }: NavBarProps) {
           {/* Dropdown Atlas */}
           <li className="relative">
             <button onClick={toggleDropdown} className={`px-3 py-2 block focus:outline-none ${
-                location.pathname.startsWith("/mapa") || location.pathname.startsWith("/acerca") 
+                location.pathname.startsWith("/mapa") || location.pathname.startsWith("/metodologia") 
                   ? "text-white font-bold border-b-2 border-white" 
                   : "text-white hover:text-white"
               }`}
@@ -52,8 +52,8 @@ function NavBar({ imageSrcPath }: NavBarProps) {
 
             {openDropdown && (
               <ul className="absolute left-0 mt-2 w-48 bg-white border rounded-lg shadow-lg z-50" onMouseLeave={closeDropdown}>
+                <li><Link to="/metodologia" className="block px-4 py-2 hover:bg-gray-200" onClick={() => setOpenDropdown(false)}>Metodología</Link></li>
                 <li><Link to="/mapa" className="block px-4 py-2 hover:bg-gray-200" onClick={() => setOpenDropdown(false)}>Mapa</Link></li>
-                <li><Link to="/acerca" className="block px-4 py-2 hover:bg-gray-200" onClick={() => setOpenDropdown(false)}>Acerca de</Link></li>
                 <li><Link to="/marco_juridico" className="block px-4 py-2 hover:bg-gray-200" onClick={() => setOpenDropdown(false)}>Marco jurídico</Link></li>
               </ul>
             )}
