@@ -62,34 +62,6 @@ function Metodologia() {
       </p>
     </div>
     <br />
-
-    <h2 className="text-2xl font-bold text-left mb-4">Reloj Criminológico</h2>
-    <div className="text-justify mt-4">
-      <p>
-      Es una herramienta de análisis en la cual se registran las horas en las que se reportan casos de feminicidio en el Estado, con el objetivo de <strong>priorizar y enfocar la atención</strong> en esos momentos, lo que permite combatir el delito <strong>optimizando los recursos en materia de seguridad</strong>.
-      </p>
-    </div>
-    <br />
-
-    <div className="text-justify mt-4">
-      <p>
-      Para la elaboración de esta herramienta se graficó la hora de muerte, según el acta de defunción, considerando que esta hora es la más cercana al momento del hecho feminicida. El segundo dato que fue graficado fue la hora de la nota criminal, que es el momento en que una autoridad tiene conocimiento del hecho.
-      </p>
-    </div>
-    <br />
-
-    <div className="text-justify mt-4">
-      <p>
-      Así, el Reloj Criminológico que se presenta muestra las horas en que mayormente se asesinan a las mujeres y la hora en que las autoridades advierten dicho asesinato.
-      </p>
-    </div>
-    <br />
-
-    <div className="text-justify mt-4">
-      <p>
-      En conclusión, el Atlas y el Reloj Criminológico son una herramienta que permite identificar ciertos patrones y tener elementos para el análisis del fenómeno social; la cual puede ser consultada por varios sectores de la sociedad, con fines de investigación, consulta estadística y para generar propuestas de políticas públicas y sociales que permitan fomentar acciones en materia de seguridad pública con enfoque de género, interculturalidad y de edad, contrarrestando, así, contextos estructurales y sistemáticos de la violencia feminicida.
-      </p>
-    </div>
     </div>
   );
 }
