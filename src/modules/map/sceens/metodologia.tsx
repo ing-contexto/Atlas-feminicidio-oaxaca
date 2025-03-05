@@ -30,6 +30,38 @@ function Metodologia() {
       </p>
     </div>
     <br />
+    <div className="text-justify mt-4">
+      <p>
+      ____________
+      <br />
+      <sup>1 </sup>Consejo Nacional de Evaluación de la Política de Desarrollo Social (CONEVAL, 2022). <i>Indicadores de pobreza municipal 2010 - 2020</i>. Recuperado de{" "}
+      <a
+        href="https://datos.gob.mx/busca/dataset/indicadores-de-pobreza-municipal-2010--2020"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="break-all"
+        style={{ color: "blue", textDecoration: "underline" }}
+      >
+        https://datos.gob.mx/busca/dataset/indicadores-de-pobreza-municipal-2010--2020
+      </a>
+      </p>
+    </div>
+
+    <div className="text-justify mt-4">
+      <p>
+      <sup>2 </sup>Comisión Nacional para Prevenir y Erradicar la Violencia contra las Mujeres (CONAVIM, 2021). <i>Resolución de la Secretaría de Gobernación respecto a la solicitud de Alerta de Violencia de Género contra las Mujeres para el Estado de Oaxaca</i>. Recuperado de{" "}
+      <a
+        href="https://www.gob.mx/cms/uploads/attachment/file/762557/35._Resoluci_n_de_AVGM_OAX__cumplimiento_sentencia_de_amparo__25_10_2021.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="break-all"
+        style={{ color: "blue", textDecoration: "underline" }}
+      >
+        https://www.gob.mx/cms/uploads/attachment/file/762557/35._Resoluci_n_de_AVGM_OAX__cumplimiento_sentencia_de_amparo__25_10_2021.pdf
+      </a>
+      </p>
+    </div>
+    <br />
 
     <h2 className="text-2xl font-bold text-left mb-4">Reloj Criminológico</h2>
     <div className="text-justify mt-4">
@@ -56,40 +88,6 @@ function Metodologia() {
     <div className="text-justify mt-4">
       <p>
       En conclusión, el Atlas y el Reloj Criminológico son una herramienta que permite identificar ciertos patrones y tener elementos para el análisis del fenómeno social; la cual puede ser consultada por varios sectores de la sociedad, con fines de investigación, consulta estadística y para generar propuestas de políticas públicas y sociales que permitan fomentar acciones en materia de seguridad pública con enfoque de género, interculturalidad y de edad, contrarrestando, así, contextos estructurales y sistemáticos de la violencia feminicida.
-      </p>
-    </div>
-    <br />
-
-    <h3 className="text-2xl font-bold text-left mb-4">Referencias</h3>
-
-    <div className="text-justify mt-4">
-      <p>
-      <sup>1 </sup>Consejo Nacional de Evaluación de la Política de Desarrollo Social (CONEVAL, 2022). <i>Indicadores de pobreza municipal 2010 - 2020</i>. Recuperado de{" "}
-      <a
-        href="https://datos.gob.mx/busca/dataset/indicadores-de-pobreza-municipal-2010--2020"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="break-all"
-        style={{ color: "blue", textDecoration: "underline" }}
-      >
-        https://datos.gob.mx/busca/dataset/indicadores-de-pobreza-municipal-2010--2020
-      </a>
-      </p>
-    </div>
-    <br />
-
-    <div className="text-justify mt-4">
-      <p>
-      <sup>2 </sup>Comisión Nacional para Prevenir y Erradicar la Violencia contra las Mujeres (CONAVIM, 2021). <i>Resolución de la Secretaría de Gobernación respecto a la solicitud de Alerta de Violencia de Género contra las Mujeres para el Estado de Oaxaca</i>. Recuperado de{" "}
-      <a
-        href="https://www.gob.mx/cms/uploads/attachment/file/762557/35._Resoluci_n_de_AVGM_OAX__cumplimiento_sentencia_de_amparo__25_10_2021.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="break-all"
-        style={{ color: "blue", textDecoration: "underline" }}
-      >
-        https://www.gob.mx/cms/uploads/attachment/file/762557/35._Resoluci_n_de_AVGM_OAX__cumplimiento_sentencia_de_amparo__25_10_2021.pdf
-      </a>
       </p>
     </div>
     </div>
