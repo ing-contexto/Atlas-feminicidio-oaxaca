@@ -6,15 +6,12 @@ export default function useGeoJsonData() {
     const [loader, setLoader] = useState(true);
 
     useEffect(() => {
-        getGeoJsonData().then(([estado, carr_estatal, carr_federal, municipal, regional, pobreza, halladas]) => {
+        getGeoJsonData().then(([estado, municipios, carr_estatal, carr_federal]) => {
             setGeoJsonData({
                 estado,
+                municipios,
                 carr_estatal,
                 carr_federal,
-                municipal,
-                regional,
-                pobreza,
-                halladas
             });
             setLoader(false);
         })

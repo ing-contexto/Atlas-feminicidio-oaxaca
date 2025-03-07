@@ -14,11 +14,11 @@ export const pobreza50Color = "#aa7444"; // Amarillo convertido a gris
 export const pobreza75Color = "#704214"; // Naranja convertido a gris
 export const pobreza100Color = "#46220f"; // Rojo convertido a gris
 
-
 export const carrEstatalcolor = "#cf881d";
 export const carrFederalcolor = "#987940";
 
 export const incidenciasColor = "#5DC1B9";
+export const polColor = "#6C3B2A"
 
 
 

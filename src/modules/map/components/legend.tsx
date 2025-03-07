@@ -2,18 +2,16 @@ import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import L from "leaflet";
 import { useMap } from "react-leaflet";
-import { alertaColor, carrEstatalcolor, carrFederalcolor, cañadaColor, costaColor, incidenciasColor, istmoColor, mixtecaColor, papaloapanColor, pobreza100Color, sierraNorteColor, sierraSurColor, vallesCentralesColor } from "../styles/colors";
+import { alertaColor, carrEstatalcolor, carrFederalcolor, cañadaColor, costaColor, incidenciasColor, istmoColor, mixtecaColor, papaloapanColor, pobreza100Color, polColor, sierraNorteColor, sierraSurColor, vallesCentralesColor } from "../styles/colors";
 
 const LEGEND_POSITION = "bottomright";
 
-// Función para agregar opacidad a un color HEX
 function addOpacity(hex: string, alpha: string) {
-    return hex + alpha; // Concatenar el valor de opacidad en formato hex
+    return hex + alpha;
 }
 
-// Definir colores con opacidad en la leyenda
 const legendStateItems = [
-    { color: addOpacity(mixtecaColor, "33"), label: "Mixteca" }, // 20% de opacidad
+    { color: addOpacity(mixtecaColor, "33"), label: "Mixteca" },
     { color: addOpacity(sierraNorteColor, "33"), label: "Sierra Norte" },
     { color: addOpacity(sierraSurColor, "33"), label: "Sierra Sur" },
     { color: addOpacity(costaColor, "33"), label: "Costa" },
@@ -35,13 +33,17 @@ const legendPovertyExtItems = [
     { color: addOpacity(pobreza100Color, "59"), label: "Municipios con pobreza extrema (>50%)" }
 ];
 
-// Componente de la leyenda
+const legendPolItems = [
+    { color: addOpacity(polColor, "59"), label: "Municipios con insidencias de VPMRG" }
+];
+
 function LegendPanel(props: { activeLayer: string }) {
     const legendItems =
         props.activeLayer === "regions" ? legendStateItems :
             props.activeLayer === "incidencias" ? legendPovertyItems :
                 props.activeLayer === "poverty_ext" ? legendPovertyExtItems :
-                    legendAlertItems;
+                    props.activeLayer === "pol" ? legendPolItems :
+                        legendAlertItems;;
 
     return (
         <div className="bg-white p-3 rounded-lg shadow-lg text-sm">

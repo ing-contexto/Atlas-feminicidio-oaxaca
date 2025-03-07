@@ -9,7 +9,7 @@ import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import Victim from "../model/victim";
 import { LatLngTuple } from "leaflet";
 import useGeoJsonData from "../hooks/useGeoJsonData";
-import { carrEstatalStyle, carrFederalStyle, estadoStyle, styleAlerta, stylePobreza, stylePobrezaExt, styleRegional } from "../styles/geoJsonStyles";
+import { carrEstatalStyle, carrFederalStyle, estadoStyle, styleAlerta, stylePobreza, stylePobrezaExt, stylePolitica, styleRegional } from "../styles/geoJsonStyles";
 import Ficha from "./ficha";
 import Legend from "./legend";
 import yellowIcon from "../../../assets/marker-icon-yellow.png"
@@ -50,10 +50,10 @@ export default function Map(props: { victims: Victim[], activeLayer: string }) {
         [15.427167595786338, -93.51326096479475]
     ];
 
-    return loader ? <div>Cargando...</div> : <MapContainer
+    return loader ? <div className="flex justify-center items-center h-screen"><p>Cargando...</p></div> : <MapContainer
         center={[17.064238826943054, -96.72367769482949]}
         zoom={8}
-        className="w-11/12 h-[70vh] sm:w-5/6 z-0"
+        className="h-[70vh] sm:w-5/6 z-0 w-full"
         maxBounds={bounds}
         maxBoundsViscosity={1.0}
         minZoom={8}
@@ -63,30 +63,30 @@ export default function Map(props: { victims: Victim[], activeLayer: string }) {
             url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         />
-
         {geoJsonData.carr_estatal && <GeoJSON data={geoJsonData.carr_estatal}
             style={carrEstatalStyle} />
         }
         {geoJsonData.carr_federal && <GeoJSON data={geoJsonData.carr_federal}
             style={carrFederalStyle} />
         }
-
         {geoJsonData.estado && <GeoJSON data={geoJsonData.estado}
             style={estadoStyle} />
         }
 
-        {geoJsonData.municipal && props.activeLayer == "alert" && <GeoJSON data={geoJsonData.municipal}
+        {geoJsonData.estado && props.activeLayer == "alert" && <GeoJSON data={geoJsonData.municipios}
             style={styleAlerta} />
         }
-
-        {geoJsonData.regional && props.activeLayer == "regions" && <GeoJSON data={geoJsonData.regional}
+        {geoJsonData.estado && props.activeLayer == "regions" && <GeoJSON data={geoJsonData.municipios}
             style={styleRegional} />
         }
-        {geoJsonData.halladas && props.activeLayer == "incidencias" && <GeoJSON data={geoJsonData.halladas}
+        {geoJsonData.estado && props.activeLayer == "incidencias" && <GeoJSON data={geoJsonData.municipios}
             style={stylePobreza} />
         }
-        {geoJsonData.pobreza && props.activeLayer == "poverty_ext" && <GeoJSON data={geoJsonData.pobreza}
+        {geoJsonData.estado && props.activeLayer == "poverty_ext" && <GeoJSON data={geoJsonData.municipios}
             style={stylePobrezaExt} />
+        }
+        {geoJsonData.estado && props.activeLayer == "pol" && <GeoJSON data={geoJsonData.municipios}
+            style={stylePolitica} />
         }
 
         <MarkerClusterGroup key={props.victims.length} >
