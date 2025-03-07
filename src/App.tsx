@@ -16,23 +16,23 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <Router>
-      <NavBar imageSrcPath={imagePath} />
+        <NavBar imageSrcPath={imagePath} />
 
-      <div className="w-full p-6 flex-grow">
-        <Routes>
-          <Route path="/" element={<Inicio />} />
-          <Route path="/metodologia" element={<Metodologia />} />
-          <Route path="/mapa" element={<Mapa />} />
-          <Route path="/marco_juridico" element={<MarcoJuridico />} />
-          <Route path="/reloj_criminologico" element={<RelojCriminologico />} />
-        </Routes>
-      </div>
-
-      <footer className="w-full bg-[#213B7C] text-white py-4 text-center">
-        <div className="container mx-auto px-4 max-w-full">
-          <p>&copy; 2025 Atlas Feminicida de Oaxaca. Todos los derechos reservados.</p>
+        <div className="w-full md:p-6 p-4 flex-grow">
+          <Routes>
+            <Route path="/" element={<Inicio />} />
+            <Route path="/metodologia" element={<Metodologia />} />
+            <Route path="/mapa" element={<Mapa />} />
+            <Route path="/marco_juridico" element={<MarcoJuridico />} />
+            <Route path="/reloj_criminologico" element={<RelojCriminologico />} />
+          </Routes>
         </div>
-      </footer>
+
+        <footer className="w-full bg-[#213B7C] text-white py-4 text-center">
+          <div className="container mx-auto px-4 max-w-full">
+            <p>&copy; 2025 Atlas Feminicida de Oaxaca. Todos los derechos reservados.</p>
+          </div>
+        </footer>
 
       </Router>
     </div>
