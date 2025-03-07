@@ -75,17 +75,17 @@ export default function Map(props: { victims: Victim[], activeLayer: string }) {
             style={estadoStyle} />
         }
 
-        {geoJsonData.municipal && props.activeLayer == "alert" && <GeoJSON data={geoJsonData.municipal}
+        {geoJsonData.estado && props.activeLayer == "alert" && <GeoJSON data={geoJsonData.municipios}
             style={styleAlerta} />
         }
 
-        {geoJsonData.regional && props.activeLayer == "regions" && <GeoJSON data={geoJsonData.regional}
+        {geoJsonData.estado && props.activeLayer == "regions" && <GeoJSON data={geoJsonData.municipios}
             style={styleRegional} />
         }
-        {geoJsonData.halladas && props.activeLayer == "incidencias" && <GeoJSON data={geoJsonData.halladas}
+        {geoJsonData.estado && props.activeLayer == "incidencias" && <GeoJSON data={geoJsonData.municipios}
             style={stylePobreza} />
         }
-        {geoJsonData.pobreza && props.activeLayer == "poverty_ext" && <GeoJSON data={geoJsonData.pobreza}
+        {geoJsonData.estado && props.activeLayer == "poverty_ext" && <GeoJSON data={geoJsonData.municipios}
             style={stylePobrezaExt} />
         }
 
