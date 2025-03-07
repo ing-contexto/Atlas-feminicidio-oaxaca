@@ -7,6 +7,16 @@ function RelojCrimi() {
   const [horaMuerte, setHoraMuerte] = useState(true);
   const [horaDenuncia, setHoraDenuncia] = useState(true);
 
+  const handleChangeMuerte = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (!e.target.checked && !horaDenuncia) return;
+    setHoraMuerte(e.target.checked);
+  };
+
+  const handleChangeDenuncia = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (!e.target.checked && !horaMuerte) return;
+    setHoraDenuncia(e.target.checked);
+  };
+
   let imagenMostrar = relojAmbos;
   if (horaMuerte && !horaDenuncia) {
     imagenMostrar = relojM;
@@ -53,7 +63,7 @@ function RelojCrimi() {
             type="checkbox"
             id="horaMuerte"
             checked={horaMuerte}
-            onChange={(e) => setHoraMuerte(e.target.checked)}
+            onChange={handleChangeMuerte}
             className="mr-2"
           />
           <label htmlFor="horaMuerte">Hora de la muerte</label>
@@ -64,7 +74,7 @@ function RelojCrimi() {
             type="checkbox"
             id="horaDenuncia"
             checked={horaDenuncia}
-            onChange={(e) => setHoraDenuncia(e.target.checked)}
+            onChange={handleChangeDenuncia}
             className="mr-2"
           />
           <label htmlFor="horaDenuncia">Hora de denuncia</label>
