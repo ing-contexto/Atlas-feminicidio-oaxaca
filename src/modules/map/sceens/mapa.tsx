@@ -58,7 +58,7 @@ export default function Mapa() {
   return (
     <div className="p-4 mt-8 flex flex-col flex-grow h-full">
       <h1 className="text-3xl font-bold text-center mb-4">Mapa</h1>
-      <div className="relative">
+      <div className="relative flex flex-col">
         <div className={`absolute md:hidden top-9 left-1 p-4 shadow-lg rounded-lg z-10 ${showFilter ? "bg-gray-200 text-gray-800" : "bg-blue-600 text-white"}`} onClick={() => {
           setShowFilter(!showFilter);
         }}>{showFilter ? "Ocultar filtros" : "Mostrar filtros"}</div>

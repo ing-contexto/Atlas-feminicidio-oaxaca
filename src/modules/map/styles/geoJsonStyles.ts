@@ -135,6 +135,6 @@ export const stylePolitica = (feature: Feature<Geometry, any> | undefined) => {
         fillColor: polColor,
         color: polColor,
         weight: 0.125,
-        fillOpacity: feature?.properties.violenciaPolitica >= 1 ? .5 : 0
+        fillOpacity: feature?.properties.violenciaPolitica > 1 ? .5 : 0
     };
 };

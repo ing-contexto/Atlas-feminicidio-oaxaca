@@ -50,10 +50,10 @@ export default function Map(props: { victims: Victim[], activeLayer: string }) {
         [15.427167595786338, -93.51326096479475]
     ];
 
-    return loader ? <div>Cargando...</div> : <MapContainer
+    return loader ? <div className="flex justify-center items-center h-screen"><p>Cargando...</p></div> : <MapContainer
         center={[17.064238826943054, -96.72367769482949]}
         zoom={8}
-        className="w-11/12 h-[70vh] sm:w-5/6 z-0"
+        className="h-[70vh] sm:w-5/6 z-0 w-full"
         maxBounds={bounds}
         maxBoundsViscosity={1.0}
         minZoom={8}
