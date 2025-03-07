@@ -20,8 +20,6 @@ const generateMonths = (initialYear: number, finalYear: number, finalMonth: numb
 };
 
 const months = generateMonths(2024, 2025, 1);
-console.log(months);
-
 
 const formatMonth = (monthString: string) => {
   const [year, month] = monthString.split("-");
@@ -40,7 +38,7 @@ const layers = [
 
 export default function Mapa() {
   const [selectedMonthIndex, setSelectedMonthIndex] = useState(0);
-  const [showFilter, setShowFilter] = useState(true);
+  const [showFilter, setShowFilter] = useState(false);
   const [showAllVictims, setShowAllVictims] = useState(true);
   const [showUnderN, setShowUnderN] = useState(false);
   const [activeLayer, setActiveLayer] = useState(layers[0].value);
@@ -64,8 +62,8 @@ export default function Mapa() {
           setShowFilter(!showFilter);
         }}>{showFilter ? "Ocultar filtros" : "Mostrar filtros"}</div>
         <div className={`${showFilter ? "" : "hidden"} md:block absolute top-9 right-4 bg-white p-4 shadow-lg rounded-lg z-10 w-64`}>
-          <h3 className="text-lg font-semibold mb-2">Filtros</h3>
-
+          <p className="text-right text-xl" onClick={() => setShowFilter(false)}>x</p>
+          <h3 className="text-lg font-semibold mb-2 -mt-4">Filtros</h3>
           <label className="flex items-center space-x-2 mb-2">
             <input
               type="checkbox"
