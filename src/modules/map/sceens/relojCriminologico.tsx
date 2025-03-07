@@ -44,7 +44,7 @@ function RelojCrimi() {
 
       <div className="text-justify md:mx-15 mx-0 text-lg">
         <p>
-          Así, el Reloj Criminológico que se presenta muestra las horas en que mayormente se asesinan a las mujeres y la hora en que las autoridades advierten dicho asesinato.
+          Así, se muestran los porcentajes de las horas en las que ocurren los hechos de violencia feminicida y del momento en que las autoridades tienen conocimiento de todos los casos sucedidos durante 2024.
         </p>
       </div>
       <br />
