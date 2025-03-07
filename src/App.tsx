@@ -18,7 +18,7 @@ function App() {
       <Router>
       <NavBar imageSrcPath={imagePath} />
 
-      <div className="w-full p-6 flex-grow">
+      <div className="w-full p-6 flex-grow overflow-hidden">
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/metodologia" element={<Metodologia />} />
