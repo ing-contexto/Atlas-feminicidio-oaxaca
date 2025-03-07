@@ -1,4 +1,4 @@
-import { act, useState } from "react";
+import { useState } from "react";
 import Map from "../components/map";
 import Victim from "../model/victim";
 import victimsData from "../utils/victimas.json";

@@ -131,16 +131,10 @@ export const estadoStyle = {
 }
 
 export const stylePolitica = (feature: Feature<Geometry, any> | undefined) => {
-    let color;
-    const pol: number = feature?.properties.violenciaPolitica;
-
-    if (pol >= 1) color = polColor
-    else color = "#ffffff"
-
     return {
-        fillColor: color,
-        color: "#000000",
+        fillColor: polColor,
+        color: polColor,
         weight: 0.125,
-        fillOpacity: 0.5
+        fillOpacity: feature?.properties.violenciaPolitica >= 1 ? .5 : 0
     };
 };

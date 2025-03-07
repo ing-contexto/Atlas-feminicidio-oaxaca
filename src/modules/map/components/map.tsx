@@ -63,11 +63,19 @@ export default function Map(props: { victims: Victim[], activeLayer: string }) {
             url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         />
+        {geoJsonData.carr_estatal && <GeoJSON data={geoJsonData.carr_estatal}
+            style={carrEstatalStyle} />
+        }
+        {geoJsonData.carr_federal && <GeoJSON data={geoJsonData.carr_federal}
+            style={carrFederalStyle} />
+        }
+        {geoJsonData.estado && <GeoJSON data={geoJsonData.estado}
+            style={estadoStyle} />
+        }
 
         {geoJsonData.estado && props.activeLayer == "alert" && <GeoJSON data={geoJsonData.municipios}
             style={styleAlerta} />
         }
-
         {geoJsonData.estado && props.activeLayer == "regions" && <GeoJSON data={geoJsonData.municipios}
             style={styleRegional} />
         }
@@ -79,15 +87,6 @@ export default function Map(props: { victims: Victim[], activeLayer: string }) {
         }
         {geoJsonData.estado && props.activeLayer == "pol" && <GeoJSON data={geoJsonData.municipios}
             style={stylePolitica} />
-        }
-        {geoJsonData.carr_estatal && <GeoJSON data={geoJsonData.carr_estatal}
-            style={carrEstatalStyle} />
-        }
-        {geoJsonData.carr_federal && <GeoJSON data={geoJsonData.carr_federal}
-            style={carrFederalStyle} />
-        }
-        {geoJsonData.estado && <GeoJSON data={geoJsonData.estado}
-            style={estadoStyle} />
         }
 
         <MarkerClusterGroup key={props.victims.length} >
