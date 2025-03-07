@@ -6,15 +6,15 @@ export default function MarcoJuridico() {
             <h1 className="text-2xl font-bold">Marco jurídico</h1>
             <CollapsibleMenu title="Convención sobre la Eliminación de todas las formas de Discriminación contra la Mujer (CEDAW)">
                 <p>
-                    <span className="font-bold">Artículo 1.</span> A los efectos de la presente Convención, la expresión “discriminación contra la mujer denotará toda distinción, exclusión o restricción basada en el sexo que tenga por objeto o resultado menoscabar o anular el reconocimiento, goce o ejercicio por la mujer, independientemente de su estado civil, sobre la base de la igualdad del hombre y la mujer, de los derechos humanos y las libertades fundamentales en las esferas política, económica, social, cultural y civil o en cualquier otra esfera.
+                    <span className="font-bold">Artículo 1. </span> A los efectos de la presente Convención, la expresión “discriminación contra la mujer denotará toda distinción, exclusión o restricción basada en el sexo que tenga por objeto o resultado menoscabar o anular el reconocimiento, goce o ejercicio por la mujer, independientemente de su estado civil, sobre la base de la igualdad del hombre y la mujer, de los derechos humanos y las libertades fundamentales en las esferas política, económica, social, cultural y civil o en cualquier otra esfera.
                 </p>
             </CollapsibleMenu>
             <CollapsibleMenu title="Convención Interamericana para Prevenir, Sancionar y Erradicar la Violencia contra la Mujer (Convención Belem Do Pará)">
                 <p>
-                    <span className="font-bold">Artículo 1.</span> Para los efectos de esta Convención debe entenderse por violencia contra la mujer cualquier acción o conducta, basada en su género, que cause muerte, daño o sufrimiento físico, sexual o psicológico a la mujer, tanto en el ámbito público como en el privado.
+                    <span className="font-bold">Artículo 1. </span> Para los efectos de esta Convención debe entenderse por violencia contra la mujer cualquier acción o conducta, basada en su género, que cause muerte, daño o sufrimiento físico, sexual o psicológico a la mujer, tanto en el ámbito público como en el privado.
                 </p>
                 <p>
-                    <span className="font-bold">Artículo 2.</span> Se entenderá que violencia contra la mujer incluye la violencia física, sexual y psicológica: </p>
+                    <span className="font-bold">Artículo 2. </span> Se entenderá que violencia contra la mujer incluye la violencia física, sexual y psicológica: </p>
                 <p className="ml-2">a. que tenga lugar dentro de la familia o unidad doméstica o en cualquier otra relación interpersonal, ya sea que el agresor comparta o haya compartido el mismo domicilio que la mujer, y que comprende, entre otros, violación, maltrato y abuso sexual;
                 </p>
                 <p className="ml-2">b. que tenga lugar en la comunidad y sea perpetrada por cualquier persona y que comprende, entre otros, violación, abuso sexual, tortura, trata de personas, prostitución forzada, secuestro y acoso sexual en el lugar de trabajo, así como en instituciones educativas, establecimientos de salud o cualquier otro lugar, y
@@ -22,9 +22,9 @@ export default function MarcoJuridico() {
                 <p className="ml-2">c. que sea perpetrada o tolerada por el Estado o sus agentes, donde quiera que ocurra.
                 </p>
                 <p>
-                    <span className="font-bold">Artículo 3.</span> Toda mujer tiene derecho a una vida libre de violencia, tanto en el ámbito público como en el privado.
+                    <span className="font-bold">Artículo 3. </span> Toda mujer tiene derecho a una vida libre de violencia, tanto en el ámbito público como en el privado.
                 </p>
-                <p><span className="font-bold">Artículo 4.</span> Toda mujer tiene derecho al reconocimiento, goce, ejercicio y protección de todos los derechos humanos y a las libertades consagradas por los instrumentos regionales e internacionales sobre derechos humanos. Estos derechos comprenden, entre otros:
+                <p><span className="font-bold">Artículo 4. </span> Toda mujer tiene derecho al reconocimiento, goce, ejercicio y protección de todos los derechos humanos y a las libertades consagradas por los instrumentos regionales e internacionales sobre derechos humanos. Estos derechos comprenden, entre otros:
                 </p>
                 <p className="ml-2">a. el derecho a que se respete su vida;
                 </p>
@@ -39,17 +39,17 @@ export default function MarcoJuridico() {
             </CollapsibleMenu>
             <CollapsibleMenu title="Ley General de Acceso de las Mujeres a una Vida Libre de Violencia">
                 <p>
-                    <span className="font-bold">ARTÍCULO 1.</span>La presente ley es reglamentaria del artículo 4o. de la Constitución Política de los Estados Unidos Mexicanos, en materia de protección del derecho de las mujeres, adolescentes y niñas a una vida libre de violencias y los deberes reforzados del Estado, sus disposiciones son de orden público y de observancia general en toda la República, y tiene por objeto establecer la coordinación entre la Federación, las entidades federativas, las demarcaciones territoriales de la Ciudad de México y los municipios para prevenir, atender, sancionar y erradicar las violencias contra las mujeres, adolescentes y niñas, así como los principios y mecanismos para el pleno acceso a una vida libre de violencias, así como para garantizar el goce y ejercicio de sus derechos humanos y fortalecer el régimen democrático establecido en la Constitución Política de los Estados Unidos Mexicanos.
+                    <span className="font-bold">ARTÍCULO 1. </span>La presente ley es reglamentaria del artículo 4o. de la Constitución Política de los Estados Unidos Mexicanos, en materia de protección del derecho de las mujeres, adolescentes y niñas a una vida libre de violencias y los deberes reforzados del Estado, sus disposiciones son de orden público y de observancia general en toda la República, y tiene por objeto establecer la coordinación entre la Federación, las entidades federativas, las demarcaciones territoriales de la Ciudad de México y los municipios para prevenir, atender, sancionar y erradicar las violencias contra las mujeres, adolescentes y niñas, así como los principios y mecanismos para el pleno acceso a una vida libre de violencias, así como para garantizar el goce y ejercicio de sus derechos humanos y fortalecer el régimen democrático establecido en la Constitución Política de los Estados Unidos Mexicanos.
                 </p>
-                <p><span className="font-bold">ARTÍCULO 3.</span> Todas las medidas que se deriven de la presente ley, garantizarán la prevención, la atención, la sanción y la erradicación de todos los tipos de violencia contra las mujeres durante su ciclo de vida y para promover su desarrollo integral y su plena participación en todas las esferas de la vida.
+                <p><span className="font-bold">ARTÍCULO 3. </span> Todas las medidas que se deriven de la presente ley, garantizarán la prevención, la atención, la sanción y la erradicación de todos los tipos de violencia contra las mujeres durante su ciclo de vida y para promover su desarrollo integral y su plena participación en todas las esferas de la vida.
                 </p>
-                <p><span className="font-bold">ARTÍCULO 21.</span> Violencia Feminicida: Es la forma extrema de violencia de género contra las mujeres, las adolescentes y las niñas, producto de la violación de sus derechos humanos y del ejercicio abusivo del poder, tanto en los ámbitos público y privado, que puede conllevar impunidad social y del Estado. Se manifiesta a través de conductas de odio y discriminación que ponen en riesgo sus vidas o culminan en muertes violentas como el feminicidio, el suicidio y el homicidio, u otras formas de muertes evitables y en conductas que afectan gravemente la integridad, la seguridad, la libertad personal y el libre desarrollo de las mujeres, las adolescentes y las niñas.
-                    En los casos de feminicidio se aplicarán las sanciones previstas en la legislación penal sustantiva.
+                <p><span className="font-bold">ARTÍCULO 21. </span> Violencia Feminicida: Es la forma extrema de violencia de género contra las mujeres, las adolescentes y las niñas, producto de la violación de sus derechos humanos y del ejercicio abusivo del poder, tanto en los ámbitos público y privado, que puede conllevar impunidad social y del Estado. Se manifiesta a través de conductas de odio y discriminación que ponen en riesgo sus vidas o culminan en muertes violentas como el feminicidio, el suicidio y el homicidio, u otras formas de muertes evitables y en conductas que afectan gravemente la integridad, la seguridad, la libertad personal y el libre desarrollo de las mujeres, las adolescentes y las niñas.
+                    <br></br>En los casos de feminicidio se aplicarán las sanciones previstas en la legislación penal sustantiva.
                 </p>
             </CollapsibleMenu>
             <CollapsibleMenu title="Código Penal Federal">
                 <p>
-                    <span className="font-bold">Artículo 325.</span> Comete el delito de feminicidio quien prive de la vida a una mujer por una razón de género.
+                    <span className="font-bold">Artículo 325. </span> Comete el delito de feminicidio quien prive de la vida a una mujer por una razón de género.
                 </p>
                 <br></br>
                 <p>
@@ -60,17 +60,17 @@ export default function MarcoJuridico() {
                 </p>
                 <p className="ml-2">II. A la víctima se le hayan infligido lesiones o mutilaciones infamantes o degradantes, previas o posteriores a la privación de la vida o actos de necrofilia;
                 </p>
-                <p className="ml-2">III.Existan antecedentes o datos de cualquier tipo de violencia en el ámbito familiar, laboral, comunitario, político o escolar, del sujeto activo en contra de la víctima;
+                <p className="ml-2">III. Existan antecedentes o datos de cualquier tipo de violencia en el ámbito familiar, laboral, comunitario, político o escolar, del sujeto activo en contra de la víctima;
                 </p>
                 <p className="ml-2">IV. Haya existido entre el sujeto activo y la víctima parentesco por consanguinidad o afinidad o una relación sentimental, afectiva, laboral, docente, de confianza o alguna relación de hecho entre las partes;
                 </p>
-                <p className="ml-2">V.Existan datos que establezcan que hubo amenazas directas o indirectas relacionadas con el hecho delictuoso, acoso o lesiones del sujeto activo en contra de la víctima;
+                <p className="ml-2">V. Existan datos que establezcan que hubo amenazas directas o indirectas relacionadas con el hecho delictuoso, acoso o lesiones del sujeto activo en contra de la víctima;
                 </p>
-                <p className="ml-2">VI.La víctima haya sido incomunicada, cualquiera que sea el tiempo previo a la privación de la vida;
+                <p className="ml-2">VI. La víctima haya sido incomunicada, cualquiera que sea el tiempo previo a la privación de la vida;
                 </p>
-                <p className="ml-2">VII.El cuerpo de la víctima sea expuesto, arrojado, depositado o exhibido en un lugar público, o
+                <p className="ml-2">VII. El cuerpo de la víctima sea expuesto, arrojado, depositado o exhibido en un lugar público, o
                 </p>
-                <p className="ml-2 mb-4">VIII.El sujeto activo haya obligado a la víctima a realizar una actividad o trabajo o haya ejercido sobre ella cualquier forma de explotación.
+                <p className="ml-2 mb-4">VIII. El sujeto activo haya obligado a la víctima a realizar una actividad o trabajo o haya ejercido sobre ella cualquier forma de explotación.
                 </p>
                 <p className="mb-4">
                     A quien cometa el delito de feminicidio se le impondrán de cuarenta a sesenta años de prisión y de quinientos a mil días multa.
@@ -85,7 +85,12 @@ export default function MarcoJuridico() {
             </CollapsibleMenu>
             <CollapsibleMenu title="Ley Estatal de Acceso de las Mujeres a una Vida Libre de Violencia">
                 <p className="mb-4">
-                    <span className="font-bold">Artículo 19 Bis.</span>
+                    <span className="font-bold">Artículo 1. </span>
+                    La presente Ley es de orden público, interés social y de observancia general en el Estado de Oaxaca. Tiene por objeto establecer las disposiciones jurídicas aplicables en el Estado y sus Municipios para la prevención, atención, sanción y erradicación de todo tipo de violencia de género contra las mujeres, así como los principios y modalidades para garantizar el disfrute de este derecho, favoreciendo su desarrollo y bienestar.
+                </p>
+
+                <p className="mb-4">
+                    <span className="font-bold">Artículo 19 Bis. </span>
                     Violencia Feminicida: Es la forma extrema de violencia de género contra las mujeres, producto de la violación de sus derechos humanos, en los ámbitos público y privado, conformada por el conjunto de conductas misóginas que pueden conllevar impunidad social y del Estado y pueden culminar en feminicidio y otras formas de muerte violenta de mujeres.
                 </p>
                 <p>
@@ -145,7 +150,6 @@ export default function MarcoJuridico() {
                 <br></br>
                 <p className="ml-2">
                     Se entiende por misoginia las conductas de odio contra la mujer que se manifiestan mediante actos violentos o crueles contra ella.
-                    Todas las muertes violentas de una mujer, incluidas aquellas que en principio parecieran haber sido causadas por motivos criminales, suicidio y algunos accidentes, deben investigarse como probable feminicidio. Cuando no se acredite el feminicidio se aplicarán las reglas del homicidio.
                 </p>
                 <br></br>
                 <p className="ml-2">
