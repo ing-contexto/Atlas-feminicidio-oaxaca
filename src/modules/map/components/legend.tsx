@@ -34,7 +34,7 @@ const legendPovertyExtItems = [
 ];
 
 const legendPolItems = [
-    { color: addOpacity(polColor, "59"), label: "Municipios con insidencias de VPMRG" }
+    { color: addOpacity(polColor, "59"), label: "Municipios con incidencias de VPMRG" }
 ];
 
 function LegendPanel(props: { activeLayer: string }) {

@@ -33,7 +33,7 @@ const layers = [
   { value: "incidencias", label: "Municipios con incidencias registradas" },
   { value: "alert", label: "Municipios con alerta de género" },
   { value: "poverty_ext", label: "Municipios con pobreza extrema" },
-  { value: "pol", label: "Municipios con insidencias de VPMRG*" }
+  { value: "pol", label: "Municipios con incidencias de VPMRG*" }
 ];
 
 export default function Mapa() {
