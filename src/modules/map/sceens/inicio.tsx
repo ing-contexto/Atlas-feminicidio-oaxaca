@@ -2,7 +2,7 @@ function Inicio() {
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10">
       <h1 className="text-3xl font-bold text-center mb-6">Presentación</h1>
-      
+
       <div className="text-justify md:mx-15 mx-0 text-lg">
         <p>
           La Fiscalía General elaboró el <strong>Atlas de Feminicidio</strong> en el Estado, el cual representa un ejercicio de <strong>transparencia</strong> con el objetivo de contribuir a la toma de decisiones en materia de <strong>políticas públicas para la prevención y atención de la violencia de género contra las mujeres</strong>.
