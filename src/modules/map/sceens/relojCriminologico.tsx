@@ -27,7 +27,7 @@ function RelojCrimi() {
 
       <div className="text-justify md:mx-15 mx-0 text-lg">
         <p>
-          Para la elaboración de esta herramienta se graficó la hora de muerte, según el acta de defunción, considerando que esta hora es la más cercana al momento del hecho feminicida. El segundo dato que fue graficado fue la hora de la nota criminal, que es el momento en que una autoridad tiene conocimiento del hecho.
+          Para la elaboración de esta herramienta se graficó la hora de muerte, según el acta de defunción, considerando que esta hora es la más cercana al momento del hecho feminicida. El segundo dato que fue graficado es la hora de la nota criminal, que es el momento en que una autoridad tiene conocimiento del hecho.
         </p>
       </div>
       <br />
