@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { act, useState } from "react";
 import Map from "../components/map";
 import Victim from "../model/victim";
 import victimsData from "../utils/victimas.json";
@@ -32,8 +32,8 @@ const layers = [
   { value: "regions", label: "Regiones del estado" },
   { value: "incidencias", label: "Municipios con incidencias registradas" },
   { value: "alert", label: "Municipios con alerta de género" },
-
-  { value: "poverty_ext", label: "Municipios con pobreza extrema" }
+  { value: "poverty_ext", label: "Municipios con pobreza extrema" },
+  { value: "pol", label: "Municipios con insidencias de VPMRG*" }
 ];
 
 export default function Mapa() {
@@ -122,6 +122,8 @@ export default function Mapa() {
         </p>
         <Map victims={filteredVictims} activeLayer={activeLayer} />
       </div>
+      {activeLayer === "pol" && (
+        <p className="text-sm mt-2">* Violencia Política contra las Mujeres por Razones de Género</p>)}
     </div>
   );
 }

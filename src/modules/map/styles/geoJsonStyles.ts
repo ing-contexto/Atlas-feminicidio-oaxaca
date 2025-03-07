@@ -1,13 +1,13 @@
 
 import { Feature, Geometry } from 'geojson';
-import { alertaColor, carrEstatalcolor, carrFederalcolor, cañadaColor, costaColor, incidenciasColor, istmoColor, mixtecaColor, papaloapanColor, pobreza100Color, pobreza25Color, pobreza50Color, pobreza75Color, sierraNorteColor, sierraSurColor, vallesCentralesColor } from './colors';
+import { alertaColor, carrEstatalcolor, carrFederalcolor, cañadaColor, costaColor, incidenciasColor, istmoColor, mixtecaColor, papaloapanColor, pobreza100Color, pobreza25Color, pobreza50Color, pobreza75Color, polColor, sierraNorteColor, sierraSurColor, vallesCentralesColor } from './colors';
 
 export const styleAlerta = (feature: Feature<Geometry, any> | undefined) => {
     return {
         fillColor: alertaColor,
         color: "#000000",
         weight: .125,
-        fillOpacity: feature?.properties.alertaGenero == true ? .35 : 0
+        fillOpacity: feature?.properties.alertaGenero == true ? .5 : 0
     };
 };
 
@@ -129,3 +129,18 @@ export const estadoStyle = {
     weight: 3,
     fillOpacity: 0
 }
+
+export const stylePolitica = (feature: Feature<Geometry, any> | undefined) => {
+    let color;
+    const pol: number = feature?.properties.violenciaPolitica;
+
+    if (pol >= 1) color = polColor
+    else color = "#ffffff"
+
+    return {
+        fillColor: color,
+        color: "#000000",
+        weight: 0.125,
+        fillOpacity: 0.5
+    };
+};

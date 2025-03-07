@@ -9,7 +9,7 @@ import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import Victim from "../model/victim";
 import { LatLngTuple } from "leaflet";
 import useGeoJsonData from "../hooks/useGeoJsonData";
-import { carrEstatalStyle, carrFederalStyle, estadoStyle, styleAlerta, stylePobreza, stylePobrezaExt, styleRegional } from "../styles/geoJsonStyles";
+import { carrEstatalStyle, carrFederalStyle, estadoStyle, styleAlerta, stylePobreza, stylePobrezaExt, stylePolitica, styleRegional } from "../styles/geoJsonStyles";
 import Ficha from "./ficha";
 import Legend from "./legend";
 import yellowIcon from "../../../assets/marker-icon-yellow.png"
@@ -64,17 +64,6 @@ export default function Map(props: { victims: Victim[], activeLayer: string }) {
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         />
 
-        {geoJsonData.carr_estatal && <GeoJSON data={geoJsonData.carr_estatal}
-            style={carrEstatalStyle} />
-        }
-        {geoJsonData.carr_federal && <GeoJSON data={geoJsonData.carr_federal}
-            style={carrFederalStyle} />
-        }
-
-        {geoJsonData.estado && <GeoJSON data={geoJsonData.estado}
-            style={estadoStyle} />
-        }
-
         {geoJsonData.estado && props.activeLayer == "alert" && <GeoJSON data={geoJsonData.municipios}
             style={styleAlerta} />
         }
@@ -87,6 +76,18 @@ export default function Map(props: { victims: Victim[], activeLayer: string }) {
         }
         {geoJsonData.estado && props.activeLayer == "poverty_ext" && <GeoJSON data={geoJsonData.municipios}
             style={stylePobrezaExt} />
+        }
+        {geoJsonData.estado && props.activeLayer == "pol" && <GeoJSON data={geoJsonData.municipios}
+            style={stylePolitica} />
+        }
+        {geoJsonData.carr_estatal && <GeoJSON data={geoJsonData.carr_estatal}
+            style={carrEstatalStyle} />
+        }
+        {geoJsonData.carr_federal && <GeoJSON data={geoJsonData.carr_federal}
+            style={carrFederalStyle} />
+        }
+        {geoJsonData.estado && <GeoJSON data={geoJsonData.estado}
+            style={estadoStyle} />
         }
 
         <MarkerClusterGroup key={props.victims.length} >
