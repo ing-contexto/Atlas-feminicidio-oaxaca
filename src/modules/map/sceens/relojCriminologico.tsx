@@ -30,7 +30,7 @@ function RelojCrimi() {
 
       <div className="text-justify md:mx-15 mx-0 text-lg">
         <p>
-          Es una herramienta de análisis en la cual se registran las horas en las que se reportan casos de feminicidio en el Estado, con el objetivo de <strong>priorizar y enfocar la atención</strong> en esos momentos, lo que permite combatir el delito <strong>optimizando los recursos en materia de seguridad</strong>.
+          Es una herramienta de análisis en la cual se registran las horas en las que se reportan casos de feminicidio en el Estado, con el objetivo de priorizar y enfocar la atención en esos momentos, lo que permite combatir el delito optimizando los recursos en materia de seguridad.
         </p>
       </div>
       <br />
