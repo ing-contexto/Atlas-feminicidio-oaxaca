@@ -46,8 +46,8 @@ export default function Map(props: { victims: Victim[], activeLayer: string }) {
     const { geoJsonData, loader } = useGeoJsonData()
 
     const bounds: [LatLngTuple, LatLngTuple] = [
-        [18.75136012536534, -98.43888370788096],
-        [15.427167595786338, -93.51326096479475]
+        [19.19590058166873, -98.58029443962332],
+        [14.607575930434555, -93.86469791087661]
     ];
 
     return loader ? <div className="flex justify-center items-center h-screen"><p>Cargando...</p></div> : <MapContainer

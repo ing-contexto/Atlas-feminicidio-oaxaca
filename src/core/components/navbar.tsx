@@ -7,15 +7,15 @@ interface NavBarProps {
 
 function NavBar({ imageSrcPath }: NavBarProps) {
   const [openDropdown, setOpenDropdown] = useState<boolean>(false);
-  const location = useLocation(); 
+  const location = useLocation();
 
   const toggleDropdown = () => setOpenDropdown(!openDropdown);
-  const closeDropdown = () => setTimeout(() => setOpenDropdown(false), 200); 
+  const closeDropdown = () => setTimeout(() => setOpenDropdown(false), 200);
 
   return (
     <nav className="w-full shadow-md" style={{ backgroundColor: "#213B7C" }}>
       <div className="container mx-auto px-4 lg:px-8 flex flex-wrap justify-between items-center py-4 max-w-full">
-        
+
         {/* Logo */}
         <Link to="/" onClick={() => setOpenDropdown(false)}>
           <img src={imageSrcPath} className="w-32 md:w-40 block" alt="Logo" />
@@ -23,15 +23,14 @@ function NavBar({ imageSrcPath }: NavBarProps) {
 
         {/* Título */}
         <h1 className="text-xl md:text-3xl font-bold text-white text-center flex-1">
-          Atlas Feminicida de Oaxaca
+          Atlas de Feminicidio en Oaxaca
         </h1>
 
         {/* Navbar */}
         <ul className="flex flex-wrap space-x-4 md:space-x-6 text-sm md:text-base">
-          
+
           <li>
-            <Link to="/" className={`px-3 py-2 block ${
-                location.pathname === "/" ? "text-white font-bold border-b-2 border-white" : "text-white hover:text-white"
+            <Link to="/" className={`px-3 py-2 block ${location.pathname === "/" ? "text-white font-bold border-b-2 border-white" : "text-white hover:text-white"
               }`}
               onClick={() => setOpenDropdown(false)}
             >
@@ -41,10 +40,9 @@ function NavBar({ imageSrcPath }: NavBarProps) {
 
           {/* Dropdown Atlas */}
           <li className="relative">
-            <button onClick={toggleDropdown} className={`px-3 py-2 block focus:outline-none ${
-                location.pathname.startsWith("/mapa") || location.pathname.startsWith("/metodologia") 
-                  ? "text-white font-bold border-b-2 border-white" 
-                  : "text-white hover:text-white"
+            <button onClick={toggleDropdown} className={`px-3 py-2 block focus:outline-none ${location.pathname.startsWith("/mapa") || location.pathname.startsWith("/metodologia")
+                ? "text-white font-bold border-b-2 border-white"
+                : "text-white hover:text-white"
               }`}
             >
               Atlas ▾
@@ -61,8 +59,7 @@ function NavBar({ imageSrcPath }: NavBarProps) {
 
           {/* Reloj Criminológico */}
           <li>
-            <Link to="/reloj_criminologico" className={`px-3 py-2 block ${
-                location.pathname === "/reloj_criminologico" ? "text-white font-bold border-b-2 border-white" : "text-white hover:text-white"
+            <Link to="/reloj_criminologico" className={`px-3 py-2 block ${location.pathname === "/reloj_criminologico" ? "text-white font-bold border-b-2 border-white" : "text-white hover:text-white"
               }`}
               onClick={() => setOpenDropdown(false)}
             >
